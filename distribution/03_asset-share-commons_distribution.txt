@@ -1,0 +1,707 @@
+Summary:
+Instances of test smells identified: 734
+Number of different types of test smells: 11
+Number of different test classes: 51
+Number of different test methods: 220
+
+Instances by test smells:
+Assertion Roulette: 497
+Conditional Test Logic: 0
+Constructor Initialization: 0
+Duplicate Assert: 8
+Eager Test: 26
+EmptyTest: 2
+Exception Catching Throwing: 0
+General Fixture: 15
+IgnoredTest: 0
+Lazy Test: 88
+Magic Number Test: 80
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 2
+Resource Optimism: 0
+Sensitive Equality: 7
+Sleepy Test: 0
+Unknown Test: 1
+Verbose Test: 8
+
+Distribution by Classes:
+Assertion Roulette: 51
+Conditional Test Logic: 0
+Constructor Initialization: 0
+Duplicate Assert: 5
+Eager Test: 8
+EmptyTest: 2
+Exception Catching Throwing: 0
+General Fixture: 8
+IgnoredTest: 0
+Lazy Test: 33
+Magic Number Test: 22
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 1
+Resource Optimism: 0
+Sensitive Equality: 1
+Sleepy Test: 0
+Unknown Test: 1
+Verbose Test: 6
+
+Distribution by Methods:
+Assertion Roulette: 246
+Conditional Test Logic: 0
+Constructor Initialization: 0
+Duplicate Assert: 7
+Eager Test: 26
+EmptyTest: 2
+Exception Catching Throwing: 0
+General Fixture: 8
+IgnoredTest: 0
+Lazy Test: 66
+Magic Number Test: 44
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 2
+Resource Optimism: 0
+Sensitive Equality: 1
+Sleepy Test: 0
+Unknown Test: 1
+Verbose Test: 8
+
+Test classes:
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/ConfigImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/selectors/ContentTypeSelectorImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/ServletHelperImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/responses/DiscardingResponseWrapperTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/OakIndexResolverTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/ExpressionEvaluatorImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/JsonResolverImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/assetkit/impl/datasources/ComponentUpdatersDataSourceTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/assetkit/impl/AssetKitHelperImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/assetkit/impl/componentupdaters/PageMetadataComponentUpdaterImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/assetkit/impl/componentupdaters/BannerComponentUpdaterImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/assetkit/impl/componentupdaters/AssetKitComponentUpdaterImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/datasources/AssetRenditionsDataSourceTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/AssetModelImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/ExternalRedirectRenditionDispatcherImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/AbstractRenditionDispatcherImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/InternalRedirectRenditionDispatcherImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/StaticRenditionDispatcherImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionsImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsDownloadServletTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsExceptionTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsZipperImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadRequestTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ContentTypeImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/FastPropertiesImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PredicateEvaluatorUtilTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluatorTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/options/CoreComponentsOptionItemTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/assetkit/impl/AssetKitImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/EditorLinksImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/actions/impl/ActionHelperImplTest.java
+asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/actions/impl/AssetDownloadHelperImplTest.java
+asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/ExpressionDownloadArchiveNamerTest.java
+asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java
+asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/AsyncAssetRenditionsDownloadServletTest.java
+asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java
+
+Test methods:
+ComputedPropertyParameter_getParameters
+getId
+getMethod
+accepts_True
+testGetMaxContentSizeLimit
+getKeyValuePairsFromJson_jcrTitleValue
+getDownloadContentSize
+getPropertyName_ComputedProperty
+getFileName_FromResource
+getUrl_Unknown
+doGet_InvalidParameters
+doGet_ExcludeAssetRenditionsViaOsgiConfig
+parseMappingsAsStrings
+isCloudReady_True
+isLegacyMode_Yes_WithMode
+getDelimiters_Default
+cleanPathInfoRequestPath
+isContextHubEnabled_validContextHub
+evaluateExpression
+ComputedPropertyParameter_getNameWithoutParameters
+getType
+getUrl_Image
+getUrl
+getSrc
+isContextHubEnabled_invalidContextHub
+getZipEntryName
+getUrl_WithComplexPath
+testGetText
+getLocalDateTime_PST
+isLegacyMode_Off
+accepts_False
+getFastProperties_WithPropertyIndexParam
+ComputedPropertyParameter_getName
+dispatch_WithSpacesInPath
+getProperties
+evaluateExpression_ForDynamicMediaVariables
+isLegacyMode_On
+getUrl_WithSimplePath
+isLegacyMode_WithComputedPropertyAndNoLegacyMode
+getRenditionNames
+checkForMaxSize_Under
+buildPredicate_DefaultDelimiter
+getArchiveFilePath_withDownloadExtensionResolver
+escape_WithQueryParams
+getUrl_AsDownload
+getComputedProperties
+isLegacyMode_WithAllConfigsAndNoLegacyMode
+getZipFileName
+isEmpty_NullValue
+getters_FromRequestWithInvalidLastSuffix
+isLegacyMode_No_WithGroups
+buildPredicate_AsContainsOperation
+dispatch_WithHostAndSpacesInPath
+doGet_NoExcludes
+setup
+getAssetsFromAssetFolder
+getAlt
+getFormat_Number
+getAllowedValuesFromQueryParameter
+getComputedProperties_Bind
+testGetOutputStream
+hasPredicate_False
+getFormat_Date
+hasPredicate_True
+isValidAssetRenditionName
+doPost_EmptyRenditionName
+getMimeType
+getValues_WhitespaceDelimiters
+getUrl_WithChineseChars
+get_CacheMiss
+getDownloadContentSize_EmptyAssets
+getFallback
+isParameterizedSearchRequest_False
+isAssetCollection
+getContentType
+getByteArrayOutputStream
+isEmpty_NoFallback
+getValues
+isCloudReady_False
+getExtensionFromAscExtQueryParameter
+doGet_WithAllowedAssetRenditionDispatcherTypes
+isLegacyMode_Yes
+getStatusCode_WithSendErrorWithMessage
+getUrl_WordDoc
+getValues_MultipleDelimiters
+isVideoAsset
+buildPredicate_AsPropertyOperation
+isEmpty
+getZipEntryName_GenerateUniqueZipFileNameEntry
+accepts
+getSrc_WithFallback
+getTypes
+getters_FromRequestWithInvalidSuffixSegments
+getDelimiters
+doGet_ExcludeAssetRenditionDispatchersViaOsgiConfig
+getName
+pack
+getFastProperties_WithAnalyzedIndexParam
+getPredicateEvaluator_AsFulltextPredicate
+isLegacyMode_NoLegacyConfigOrLegacyMode
+isLegacyMode_WithRenditionRegexAndNoLegacyMode
+collectExtraMetadataProperties
+isVideoAsset_VideoAsset
+isReady_NotReadyDueToRunmode
+activateInCloudReady
+testGetMaxContentSizeLimit_NullConfig
+get_WithRequestAndWithParameters
+getZipFileName_WithExtension
+escape_WithNoDoubleEscaping
+isReady_NoFallback
+resolveDamAsset
+getSize
+get
+testIsDisabled
+containsKey_NoMatch
+doGet_WithHiddenAssetRenditionDispatcher
+isContextHubEnabled_noContextHub
+doPost_InvalidAssetPath
+cleanURI
+getValues_nullify
+getMaxContentSize
+doGet
+setUp
+getZipFileName_Default
+escape_WithDoubleEscaping
+get_CacheHit
+getAsset_True
+getAssetRenditionDispatchers
+evaluateProperties
+doPost
+referenceFilter_CloudReady_True_Unsatisfied
+getLocale_Default
+getRequestPathInfo
+getDeltaProperties
+getAssetsFromQueryParameter
+ComputedPropertyParameter_getParameterIsEmpty
+addSlingBindings
+getAssets_empty
+getters_CstorRenditionNameAndDownloadAndOtherParameters
+isParameterizedSearchRequest_True
+containsKey_WithParameters
+buildPredicate_CustomDelimiter
+collectMetadataProperty
+get_WithoutParameters
+isEmpty_EmptyText
+isEscaped
+getStatusCode_WithSetStatus
+buildPredicate_WithAlreadyBuiltPredicate
+testGetValue
+isEscaped_WithHost
+getOptions
+getMessage
+isAndGetRedirect_WithSetStatus301
+getStatusCode_WithSendError
+getFileName_Default
+getAttribute
+getExportedType
+resolveGenericList
+isEmpty_NotEmpty
+containsKey_WithoutParameters
+testGetWriter
+getAssets
+getters_CstorRenditionNameAndDownload
+get_WithoutRequestAndWithParameters
+doGet_ExcludeAssetRenditionsViaProperty
+getResource
+getFormat
+getters_FromRequest
+getKeyValuePairsFromJson_textValue
+getAssets_withFilter
+isLegacyMode_No
+referenceFilter_CloudReady_True_Satisfied
+getFileName_FromOSGiConfig
+isEmpty_NoRenditionName
+getters_CstorRenditionName
+isAssetFolder
+getBinaryUri
+getAssetsFromAssetCollection
+getAssetDetailsEditorPath
+buildPredicate_MultiDelimiters
+buildPredicate_WithNoneDelimiter
+doGet_ExcludeAssetRenditionDispatchersViaProperty
+doGet_ServiceRanking
+getPredicateEvaluator_AsPropertyPredicate
+referenceFilter_CloudReady_False_Unsatisfied
+isReady
+ComputedPropertyParameter_getId
+getLocalDateTime_EST
+isAsset
+getMaxContentSize_EmptyAssets
+findPredicate
+getFastProperties_WithAnalyzedAndPropertyIndexParams
+dispatch
+getSlowLabel
+getDownloadContentSize_NoMaxLimit
+ComputedPropertyParameter_getIdWithNoParameters
+setResponseHeaders
+resolveRankingOakIndex
+referenceFilter_CloudReady_False_Satisfied
+updateComponent
+escape_WithHost
+getFastProperties_WithNoParams
+getFastLabel
+resolveExternalInclude
+buildPredicate_WhitespaceDelimiters
+buildPredicate_AsStartsWithOperation
+removeMetadataProperties
+isReady_NotReady
+getPropertyName
+getAssetRenditionGroups
+getAsset
+setResponseHeaders_AsAttachment
+getAssetFolderEditorPath
+checkForMaxSize_Over
+getUrl_WithSimplePathResource
+isAndGetRedirect_WithSendRedirect
+getLabel
+isAndGetRedirect_WithSetStatus302
+isReady_NoRenditionName
+getArchiveFilePath
+
+Test smells on the same lines and classes (with more than one test smell):
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/ConfigImplTest.java - Line 45: Lazy Test (Method: isContextHubEnabled_validContextHub, isContextHubEnabled_invalidContextHub, isContextHubEnabled_noContextHub), Assertion Roulette (Method: isContextHubEnabled_noContextHub)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/ConfigImplTest.java - Line 53: Lazy Test (Method: isContextHubEnabled_validContextHub, isContextHubEnabled_invalidContextHub, isContextHubEnabled_noContextHub), Assertion Roulette (Method: isContextHubEnabled_invalidContextHub)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/ConfigImplTest.java - Line 61: Lazy Test (Method: isContextHubEnabled_validContextHub, isContextHubEnabled_invalidContextHub, isContextHubEnabled_noContextHub), Assertion Roulette (Method: isContextHubEnabled_validContextHub)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/selectors/ContentTypeSelectorImplTest.java - Line 128: Lazy Test (Method: getUrl_Unknown, getUrl_WordDoc, getUrl_Image), Assertion Roulette (Method: getUrl_Unknown)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/selectors/ContentTypeSelectorImplTest.java - Line 110: Lazy Test (Method: getUrl_Unknown, getUrl_WordDoc, getUrl_Image), Assertion Roulette (Method: getUrl_Image)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/selectors/ContentTypeSelectorImplTest.java - Line 119: Lazy Test (Method: getUrl_Unknown, getUrl_WordDoc, getUrl_Image), Assertion Roulette (Method: getUrl_WordDoc)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/selectors/ContentTypeSelectorImplTest.java - Line 101: Lazy Test (Method: accepts_False, accepts_True), Assertion Roulette (Method: accepts_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/configuration/impl/selectors/ContentTypeSelectorImplTest.java - Line 95: Lazy Test (Method: accepts_False, accepts_True), Assertion Roulette (Method: accepts_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java - Line 77: Magic Number Test (Method: referenceFilter_CloudReady_True_Satisfied), Assertion Roulette (Method: referenceFilter_CloudReady_True_Satisfied)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java - Line 87: Magic Number Test (Method: referenceFilter_CloudReady_True_Unsatisfied), Assertion Roulette (Method: referenceFilter_CloudReady_True_Unsatisfied)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java - Line 96: Magic Number Test (Method: referenceFilter_CloudReady_False_Satisfied), Assertion Roulette (Method: referenceFilter_CloudReady_False_Satisfied)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java - Line 106: Magic Number Test (Method: referenceFilter_CloudReady_False_Unsatisfied), Assertion Roulette (Method: referenceFilter_CloudReady_False_Unsatisfied)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java - Line 97: Lazy Test (Method: referenceFilter_CloudReady_False_Satisfied, referenceFilter_CloudReady_True_Satisfied, isCloudReady_False, isCloudReady_True), Assertion Roulette (Method: referenceFilter_CloudReady_False_Satisfied)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java - Line 59: Lazy Test (Method: referenceFilter_CloudReady_False_Satisfied, referenceFilter_CloudReady_True_Satisfied, isCloudReady_False, isCloudReady_True), Assertion Roulette (Method: isCloudReady_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java - Line 68: Lazy Test (Method: referenceFilter_CloudReady_False_Satisfied, referenceFilter_CloudReady_True_Satisfied, isCloudReady_False, isCloudReady_True), Assertion Roulette (Method: isCloudReady_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/RequireAemImplTest.java - Line 78: Lazy Test (Method: referenceFilter_CloudReady_False_Satisfied, referenceFilter_CloudReady_True_Satisfied, isCloudReady_False, isCloudReady_True), Assertion Roulette (Method: referenceFilter_CloudReady_True_Satisfied)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/impl/JsonResolverImplTest.java - Line 93: Magic Number Test (Method: resolveGenericList), Assertion Roulette (Method: resolveGenericList)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 51: Verbose Test (Method: findPredicate), Assertion Roulette (Method: findPredicate)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 61: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 65: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 69: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 73: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 77: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 81: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 85: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 89: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 93: Verbose Test (Method: hasPredicate_True), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Assertion Roulette (Method: hasPredicate_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 129: Verbose Test (Method: hasPredicate_False), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_False), Assertion Roulette (Method: hasPredicate_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 104: Verbose Test (Method: hasPredicate_False), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_False), Assertion Roulette (Method: hasPredicate_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 108: Verbose Test (Method: hasPredicate_False), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_False), Assertion Roulette (Method: hasPredicate_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 112: Verbose Test (Method: hasPredicate_False), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_False), Assertion Roulette (Method: hasPredicate_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 117: Verbose Test (Method: hasPredicate_False), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_False), Assertion Roulette (Method: hasPredicate_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 121: Verbose Test (Method: hasPredicate_False), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_False), Assertion Roulette (Method: hasPredicate_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 125: Verbose Test (Method: hasPredicate_False), Lazy Test (Method: hasPredicate_False, hasPredicate_True), Duplicate Assert (Method: hasPredicate_False), Assertion Roulette (Method: hasPredicate_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 144: Lazy Test (Method: isParameterizedSearchRequest_False, isParameterizedSearchRequest_True), Duplicate Assert (Method: isParameterizedSearchRequest_False), Assertion Roulette (Method: isParameterizedSearchRequest_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 147: Lazy Test (Method: isParameterizedSearchRequest_False, isParameterizedSearchRequest_True), Duplicate Assert (Method: isParameterizedSearchRequest_False), Assertion Roulette (Method: isParameterizedSearchRequest_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 141: Lazy Test (Method: isParameterizedSearchRequest_False, isParameterizedSearchRequest_True), Duplicate Assert (Method: isParameterizedSearchRequest_False), Assertion Roulette (Method: isParameterizedSearchRequest_False)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/PredicateUtilTest.java - Line 135: Lazy Test (Method: isParameterizedSearchRequest_False, isParameterizedSearchRequest_True), Assertion Roulette (Method: isParameterizedSearchRequest_True)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/assetkit/impl/AssetKitHelperImplTest.java - Line 65: Magic Number Test (Method: getAssets), Assertion Roulette (Method: getAssets)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/assetkit/impl/AssetKitHelperImplTest.java - Line 82: Magic Number Test (Method: getAssetsFromAssetCollection), Assertion Roulette (Method: getAssetsFromAssetCollection)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/assetkit/impl/AssetKitHelperImplTest.java - Line 91: Magic Number Test (Method: getAssetsFromAssetFolder), Assertion Roulette (Method: getAssetsFromAssetFolder)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 32: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 33: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 34: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 36: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 69: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 70: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 71: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 73: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 42: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithNoDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 44: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithNoDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 45: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithNoDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 46: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithNoDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 48: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithNoDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 93: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithQueryParams)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 30: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithDoubleEscaping)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 95: Lazy Test (Method: escape_WithQueryParams, escape_WithHost, escape_WithNoDoubleEscaping, escape_WithDoubleEscaping), Assertion Roulette (Method: escape_WithQueryParams)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 53: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 55: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 56: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 57: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 58: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 59: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 61: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 62: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 63: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 64: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 78: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 79: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 80: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 81: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 82: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 84: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 85: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 86: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/util/UrlUtilTest.java - Line 87: Lazy Test (Method: isEscaped_WithHost, isEscaped), Assertion Roulette (Method: isEscaped_WithHost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/datasources/AssetRenditionsDataSourceTest.java - Line 222: Verbose Test (Method: doGet_ServiceRanking), Assertion Roulette (Method: doGet_ServiceRanking)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/datasources/AssetRenditionsDataSourceTest.java - Line 223: Verbose Test (Method: doGet_ServiceRanking), Assertion Roulette (Method: doGet_ServiceRanking)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 57: Magic Number Test (Method: collectExtraMetadataProperties), Assertion Roulette (Method: collectExtraMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 59: Magic Number Test (Method: collectExtraMetadataProperties), Assertion Roulette (Method: collectExtraMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 60: Magic Number Test (Method: collectExtraMetadataProperties), Assertion Roulette (Method: collectExtraMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 61: Magic Number Test (Method: collectExtraMetadataProperties), Assertion Roulette (Method: collectExtraMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 63: Magic Number Test (Method: collectExtraMetadataProperties), Assertion Roulette (Method: collectExtraMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 64: Magic Number Test (Method: collectExtraMetadataProperties), Assertion Roulette (Method: collectExtraMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 83: Magic Number Test (Method: removeMetadataProperties), Assertion Roulette (Method: removeMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 84: Magic Number Test (Method: removeMetadataProperties), Assertion Roulette (Method: removeMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/MetadataSchemaPropertiesImplTest.java - Line 85: Magic Number Test (Method: removeMetadataProperties), Assertion Roulette (Method: removeMetadataProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/AssetModelImplTest.java - Line 56: Lazy Test (Method: getUrl_WithSimplePathResource, getUrl_WithComplexPath, getUrl_WithChineseChars, getUrl_WithSimplePath), Assertion Roulette (Method: getUrl_WithSimplePath)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/AssetModelImplTest.java - Line 67: Lazy Test (Method: getUrl_WithSimplePathResource, getUrl_WithComplexPath, getUrl_WithChineseChars, getUrl_WithSimplePath), Assertion Roulette (Method: getUrl_WithChineseChars)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/AssetModelImplTest.java - Line 78: Lazy Test (Method: getUrl_WithSimplePathResource, getUrl_WithComplexPath, getUrl_WithChineseChars, getUrl_WithSimplePath), Assertion Roulette (Method: getUrl_WithComplexPath)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/AssetModelImplTest.java - Line 87: Lazy Test (Method: getUrl_WithSimplePathResource, getUrl_WithComplexPath, getUrl_WithChineseChars, getUrl_WithSimplePath), Assertion Roulette (Method: getUrl_WithSimplePathResource)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 201: Magic Number Test (Method: ComputedPropertyParameter_getParameters), Eager Test (Method: ComputedPropertyParameter_getParameters), Assertion Roulette (Method: ComputedPropertyParameter_getParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 177: Lazy Test (Method: ComputedPropertyParameter_getNameWithoutParameters, ComputedPropertyParameter_getName), Lazy Test (Method: ComputedPropertyParameter_getNameWithoutParameters, ComputedPropertyParameter_getName), Lazy Test (Method: ComputedPropertyParameter_getNameWithoutParameters, ComputedPropertyParameter_getName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 165: Lazy Test (Method: ComputedPropertyParameter_getNameWithoutParameters, ComputedPropertyParameter_getName), Lazy Test (Method: ComputedPropertyParameter_getNameWithoutParameters, ComputedPropertyParameter_getName), Lazy Test (Method: ComputedPropertyParameter_getNameWithoutParameters, ComputedPropertyParameter_getName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 101: Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters), Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters), Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 94: Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters), Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters), Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 87: Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters), Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters), Lazy Test (Method: containsKey_NoMatch, containsKey_WithParameters, containsKey_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 133: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 134: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 135: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 109: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 147: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 148: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 149: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 117: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 125: Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters), Lazy Test (Method: get_CacheHit, get_CacheMiss, get_WithoutRequestAndWithParameters, get_WithRequestAndWithParameters, get_WithoutParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 227: Lazy Test (Method: ComputedPropertyParameter_getIdWithNoParameters, ComputedPropertyParameter_getId), Lazy Test (Method: ComputedPropertyParameter_getIdWithNoParameters, ComputedPropertyParameter_getId), Lazy Test (Method: ComputedPropertyParameter_getIdWithNoParameters, ComputedPropertyParameter_getId)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 215: Lazy Test (Method: ComputedPropertyParameter_getIdWithNoParameters, ComputedPropertyParameter_getId), Lazy Test (Method: ComputedPropertyParameter_getIdWithNoParameters, ComputedPropertyParameter_getId), Lazy Test (Method: ComputedPropertyParameter_getIdWithNoParameters, ComputedPropertyParameter_getId)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 188: Lazy Test (Method: ComputedPropertyParameter_getParameters, ComputedPropertyParameter_getParameterIsEmpty), Lazy Test (Method: ComputedPropertyParameter_getParameters, ComputedPropertyParameter_getParameterIsEmpty), Lazy Test (Method: ComputedPropertyParameter_getParameters, ComputedPropertyParameter_getParameterIsEmpty), Eager Test (Method: ComputedPropertyParameter_getParameterIsEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 199: Lazy Test (Method: ComputedPropertyParameter_getParameters, ComputedPropertyParameter_getParameterIsEmpty), Lazy Test (Method: ComputedPropertyParameter_getParameters, ComputedPropertyParameter_getParameterIsEmpty), Lazy Test (Method: ComputedPropertyParameter_getParameters, ComputedPropertyParameter_getParameterIsEmpty), Eager Test (Method: ComputedPropertyParameter_getParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/impl/CombinedPropertiesTest.java - Line 190: Eager Test (Method: ComputedPropertyParameter_getParameterIsEmpty), Assertion Roulette (Method: ComputedPropertyParameter_getParameterIsEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/ExternalRedirectRenditionDispatcherImplTest.java - Line 159: Magic Number Test (Method: dispatch), Assertion Roulette (Method: dispatch)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/ExternalRedirectRenditionDispatcherImplTest.java - Line 179: Magic Number Test (Method: dispatch_WithSpacesInPath), Assertion Roulette (Method: dispatch_WithSpacesInPath)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/ExternalRedirectRenditionDispatcherImplTest.java - Line 201: Magic Number Test (Method: dispatch_WithHostAndSpacesInPath), Assertion Roulette (Method: dispatch_WithHostAndSpacesInPath)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/InternalRedirectRenditionDispatcherImplTest.java - Line 231: Verbose Test (Method: dispatch_WithSpacesInPath), Lazy Test (Method: dispatch_WithSpacesInPath, dispatch)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/dispatchers/InternalRedirectRenditionDispatcherImplTest.java - Line 233: Verbose Test (Method: dispatch_WithSpacesInPath), Assertion Roulette (Method: dispatch_WithSpacesInPath)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImplTest.java - Line 49: Magic Number Test (Method: getAssetRenditionDispatchers), Assertion Roulette (Method: getAssetRenditionDispatchers)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImplTest.java - Line 50: Magic Number Test (Method: getAssetRenditionDispatchers), Assertion Roulette (Method: getAssetRenditionDispatchers)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImplTest.java - Line 51: Magic Number Test (Method: getAssetRenditionDispatchers), Assertion Roulette (Method: getAssetRenditionDispatchers)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImplTest.java - Line 52: Magic Number Test (Method: getAssetRenditionDispatchers), Assertion Roulette (Method: getAssetRenditionDispatchers)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 128: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 129: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 130: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 131: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 132: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 133: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 134: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 135: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 136: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 137: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 138: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 139: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 140: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 141: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 104: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 105: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 106: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 107: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 108: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 109: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 110: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 111: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 112: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 113: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 114: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 115: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 116: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 117: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 118: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 119: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 120: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 121: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 122: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 123: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 124: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 125: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 126: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 127: Unknown Test (Method: doGet), Verbose Test (Method: doGet)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionServletTest.java - Line 163: Magic Number Test (Method: doGet_InvalidParameters), Assertion Roulette (Method: doGet_InvalidParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 79: Magic Number Test (Method: getters_CstorRenditionNameAndDownload), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownload), Assertion Roulette (Method: getters_CstorRenditionNameAndDownload)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 80: Magic Number Test (Method: getters_CstorRenditionNameAndDownload), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownload), Assertion Roulette (Method: getters_CstorRenditionNameAndDownload)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 90: Magic Number Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Assertion Roulette (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 91: Magic Number Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Assertion Roulette (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 92: Magic Number Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Assertion Roulette (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 93: Magic Number Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Assertion Roulette (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 106: Magic Number Test (Method: getters_FromRequest), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_FromRequest), Assertion Roulette (Method: getters_FromRequest)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 107: Magic Number Test (Method: getters_FromRequest), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_FromRequest), Assertion Roulette (Method: getters_FromRequest)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 108: Magic Number Test (Method: getters_FromRequest), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_FromRequest), Assertion Roulette (Method: getters_FromRequest)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 109: Magic Number Test (Method: getters_FromRequest), Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_FromRequest), Assertion Roulette (Method: getters_FromRequest)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 89: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Assertion Roulette (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 105: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_FromRequest), Assertion Roulette (Method: getters_FromRequest)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 68: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionName), Assertion Roulette (Method: getters_CstorRenditionName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 78: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownload), Assertion Roulette (Method: getters_CstorRenditionNameAndDownload)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 66: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionName), Assertion Roulette (Method: getters_CstorRenditionName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 76: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownload), Assertion Roulette (Method: getters_CstorRenditionNameAndDownload)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 87: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Assertion Roulette (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 103: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_FromRequest), Assertion Roulette (Method: getters_FromRequest)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 64: Lazy Test (Method: getters_FromRequestWithInvalidLastSuffix, getters_FromRequestWithInvalidSuffixSegments, getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 101: Lazy Test (Method: getters_FromRequestWithInvalidLastSuffix, getters_FromRequestWithInvalidSuffixSegments, getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_FromRequest)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 74: Lazy Test (Method: getters_FromRequestWithInvalidLastSuffix, getters_FromRequestWithInvalidSuffixSegments, getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownload)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 85: Lazy Test (Method: getters_FromRequestWithInvalidLastSuffix, getters_FromRequestWithInvalidSuffixSegments, getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 69: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionName), Assertion Roulette (Method: getters_CstorRenditionName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 104: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_FromRequest), Assertion Roulette (Method: getters_FromRequest)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 67: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionName), Assertion Roulette (Method: getters_CstorRenditionName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 88: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters), Assertion Roulette (Method: getters_CstorRenditionNameAndDownloadAndOtherParameters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionParametersTest.java - Line 77: Lazy Test (Method: getters_FromRequest, getters_CstorRenditionNameAndDownloadAndOtherParameters, getters_CstorRenditionNameAndDownload, getters_CstorRenditionName), Eager Test (Method: getters_CstorRenditionNameAndDownload), Assertion Roulette (Method: getters_CstorRenditionNameAndDownload)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 37: Magic Number Test (Method: getSize), Eager Test (Method: getSize), Assertion Roulette (Method: getSize)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 13: Sensitive Equality (Method: getBinaryUri), Eager Test (Method: getBinaryUri), Assertion Roulette (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 16: Sensitive Equality (Method: getBinaryUri), Eager Test (Method: getBinaryUri), Assertion Roulette (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 19: Sensitive Equality (Method: getBinaryUri), Eager Test (Method: getBinaryUri), Assertion Roulette (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 22: Sensitive Equality (Method: getBinaryUri), Eager Test (Method: getBinaryUri), Assertion Roulette (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 25: Sensitive Equality (Method: getBinaryUri), Eager Test (Method: getBinaryUri), Assertion Roulette (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 28: Sensitive Equality (Method: getBinaryUri), Eager Test (Method: getBinaryUri), Assertion Roulette (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 31: Sensitive Equality (Method: getBinaryUri), Eager Test (Method: getBinaryUri), Assertion Roulette (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 36: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getSize)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 42: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getMimeType)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 12: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 15: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 18: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 21: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 24: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 27: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 30: Lazy Test (Method: getMimeType, getSize, getBinaryUri), Eager Test (Method: getBinaryUri)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionTest.java - Line 43: Eager Test (Method: getMimeType), Assertion Roulette (Method: getMimeType)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 92: Magic Number Test (Method: getStatusCode_WithSetStatus), Lazy Test (Method: getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus), Eager Test (Method: getStatusCode_WithSetStatus), Assertion Roulette (Method: getStatusCode_WithSetStatus)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 100: Magic Number Test (Method: getStatusCode_WithSendError), Lazy Test (Method: getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus), Eager Test (Method: getStatusCode_WithSendError), Assertion Roulette (Method: getStatusCode_WithSendError)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 108: Magic Number Test (Method: getStatusCode_WithSendErrorWithMessage), Lazy Test (Method: getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus), Eager Test (Method: getStatusCode_WithSendErrorWithMessage), Assertion Roulette (Method: getStatusCode_WithSendErrorWithMessage)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 97: Lazy Test (Method: getContentType, getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus, getByteArrayOutputStream, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: getStatusCode_WithSendError)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 70: Lazy Test (Method: getContentType, getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus, getByteArrayOutputStream, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSetStatus302)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 105: Lazy Test (Method: getContentType, getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus, getByteArrayOutputStream, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: getStatusCode_WithSendErrorWithMessage)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 113: Lazy Test (Method: getContentType, getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus, getByteArrayOutputStream, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: getContentType)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 82: Lazy Test (Method: getContentType, getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus, getByteArrayOutputStream, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: getByteArrayOutputStream)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 51: Lazy Test (Method: getContentType, getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus, getByteArrayOutputStream, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSendRedirect)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 89: Lazy Test (Method: getContentType, getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus, getByteArrayOutputStream, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: getStatusCode_WithSetStatus)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 60: Lazy Test (Method: getContentType, getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError, getStatusCode_WithSetStatus, getByteArrayOutputStream, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSetStatus301)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 64: Lazy Test (Method: isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSetStatus301), Assertion Roulette (Method: isAndGetRedirect_WithSetStatus301)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 74: Lazy Test (Method: isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSetStatus302), Assertion Roulette (Method: isAndGetRedirect_WithSetStatus302)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 54: Lazy Test (Method: isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSendRedirect), Assertion Roulette (Method: isAndGetRedirect_WithSendRedirect)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 65: Lazy Test (Method: isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSetStatus301), Assertion Roulette (Method: isAndGetRedirect_WithSetStatus301)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 75: Lazy Test (Method: isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSetStatus302), Assertion Roulette (Method: isAndGetRedirect_WithSetStatus302)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 55: Lazy Test (Method: isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301, isAndGetRedirect_WithSendRedirect), Eager Test (Method: isAndGetRedirect_WithSendRedirect), Assertion Roulette (Method: isAndGetRedirect_WithSendRedirect)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 106: Lazy Test (Method: getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError), Eager Test (Method: getStatusCode_WithSendErrorWithMessage)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 98: Lazy Test (Method: getStatusCode_WithSendErrorWithMessage, getStatusCode_WithSendError), Eager Test (Method: getStatusCode_WithSendError)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 90: Lazy Test (Method: getStatusCode_WithSetStatus, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301), Eager Test (Method: getStatusCode_WithSetStatus)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 61: Lazy Test (Method: getStatusCode_WithSetStatus, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301), Eager Test (Method: isAndGetRedirect_WithSetStatus301)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 71: Lazy Test (Method: getStatusCode_WithSetStatus, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301), Eager Test (Method: isAndGetRedirect_WithSetStatus302)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 72: Lazy Test (Method: getContentType, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301), Eager Test (Method: isAndGetRedirect_WithSetStatus302)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 114: Lazy Test (Method: getContentType, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301), Eager Test (Method: getContentType)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 62: Lazy Test (Method: getContentType, isAndGetRedirect_WithSetStatus302, isAndGetRedirect_WithSetStatus301), Eager Test (Method: isAndGetRedirect_WithSetStatus301)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 84: Eager Test (Method: getByteArrayOutputStream), Assertion Roulette (Method: getByteArrayOutputStream)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadResponseTest.java - Line 116: Eager Test (Method: getContentType), Assertion Roulette (Method: getContentType)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsDownloadServletTest.java - Line 155: Magic Number Test (Method: doPost), Assertion Roulette (Method: doPost)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsDownloadServletTest.java - Line 172: Magic Number Test (Method: doPost_EmptyRenditionName), Assertion Roulette (Method: doPost_EmptyRenditionName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsDownloadServletTest.java - Line 189: Magic Number Test (Method: doPost_InvalidAssetPath), Assertion Roulette (Method: doPost_InvalidAssetPath)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsExceptionTest.java - Line 12: Eager Test (Method: getMessage), Assertion Roulette (Method: getMessage)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsZipperImplTest.java - Line 232: Magic Number Test (Method: pack), Assertion Roulette (Method: pack)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsZipperImplTest.java - Line 146: Lazy Test (Method: getFileName_Default, getFileName_FromOSGiConfig, getFileName_FromResource), Assertion Roulette (Method: getFileName_Default)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsZipperImplTest.java - Line 123: Lazy Test (Method: getFileName_Default, getFileName_FromOSGiConfig, getFileName_FromResource), Assertion Roulette (Method: getFileName_FromResource)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionsZipperImplTest.java - Line 135: Lazy Test (Method: getFileName_Default, getFileName_FromOSGiConfig, getFileName_FromResource), Assertion Roulette (Method: getFileName_FromOSGiConfig)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadRequestTest.java - Line 48: Lazy Test (Method: getRequestPathInfo, getMethod, getResource, getAttribute), Eager Test (Method: getAttribute)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadRequestTest.java - Line 107: Lazy Test (Method: getRequestPathInfo, getMethod, getResource, getAttribute), Eager Test (Method: getRequestPathInfo)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadRequestTest.java - Line 68: Lazy Test (Method: getRequestPathInfo, getMethod, getResource, getAttribute), Eager Test (Method: getResource)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/impl/AssetRenditionDownloadRequestTest.java - Line 85: Lazy Test (Method: getRequestPathInfo, getMethod, getResource, getAttribute), Eager Test (Method: getMethod)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ContentTypeImplTest.java - Line 72: Duplicate Assert (Method: get), Assertion Roulette (Method: get)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ContentTypeImplTest.java - Line 75: Duplicate Assert (Method: get), Assertion Roulette (Method: get)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ContentTypeImplTest.java - Line 69: Duplicate Assert (Method: get), Assertion Roulette (Method: get)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 54: Magic Number Test (Method: getComputedProperties), Assertion Roulette (Method: getComputedProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 55: Magic Number Test (Method: getComputedProperties), Assertion Roulette (Method: getComputedProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 56: Magic Number Test (Method: getComputedProperties), Assertion Roulette (Method: getComputedProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 75: Magic Number Test (Method: getComputedProperties_Bind), Verbose Test (Method: getComputedProperties_Bind), Duplicate Assert (Method: getComputedProperties_Bind), Assertion Roulette (Method: getComputedProperties_Bind)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 76: Magic Number Test (Method: getComputedProperties_Bind), Verbose Test (Method: getComputedProperties_Bind), Assertion Roulette (Method: getComputedProperties_Bind)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 82: Magic Number Test (Method: getComputedProperties_Bind), Verbose Test (Method: getComputedProperties_Bind), Duplicate Assert (Method: getComputedProperties_Bind), Assertion Roulette (Method: getComputedProperties_Bind)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 83: Magic Number Test (Method: getComputedProperties_Bind), Verbose Test (Method: getComputedProperties_Bind), Duplicate Assert (Method: getComputedProperties_Bind), Assertion Roulette (Method: getComputedProperties_Bind)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 89: Magic Number Test (Method: getComputedProperties_Bind), Verbose Test (Method: getComputedProperties_Bind), Duplicate Assert (Method: getComputedProperties_Bind), Assertion Roulette (Method: getComputedProperties_Bind)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 90: Magic Number Test (Method: getComputedProperties_Bind), Verbose Test (Method: getComputedProperties_Bind), Duplicate Assert (Method: getComputedProperties_Bind), Assertion Roulette (Method: getComputedProperties_Bind)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 74: Verbose Test (Method: getComputedProperties_Bind), Lazy Test (Method: getComputedProperties_Bind, getComputedProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 81: Verbose Test (Method: getComputedProperties_Bind), Lazy Test (Method: getComputedProperties_Bind, getComputedProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/content/properties/impl/ComputedPropertiesImplTest.java - Line 88: Verbose Test (Method: getComputedProperties_Bind), Lazy Test (Method: getComputedProperties_Bind, getComputedProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/FastPropertiesImplTest.java - Line 122: Magic Number Test (Method: getDeltaProperties), Assertion Roulette (Method: getDeltaProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/FastPropertiesImplTest.java - Line 123: Magic Number Test (Method: getDeltaProperties), Assertion Roulette (Method: getDeltaProperties)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PredicateEvaluatorUtilTest.java - Line 28: Magic Number Test (Method: getValues), Assertion Roulette (Method: getValues)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PredicateEvaluatorUtilTest.java - Line 49: Magic Number Test (Method: getValues_nullify), Assertion Roulette (Method: getValues_nullify)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluatorTest.java - Line 288: Magic Number Test (Method: getDelimiters), Assertion Roulette (Method: getDelimiters)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluatorTest.java - Line 301: Magic Number Test (Method: getDelimiters_Default), Assertion Roulette (Method: getDelimiters_Default)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluatorTest.java - Line 324: Duplicate Assert (Method: getPredicateEvaluator_AsFulltextPredicate), Assertion Roulette (Method: getPredicateEvaluator_AsFulltextPredicate)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluatorTest.java - Line 319: Duplicate Assert (Method: getPredicateEvaluator_AsFulltextPredicate), Assertion Roulette (Method: getPredicateEvaluator_AsFulltextPredicate)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 34: Magic Number Test (Method: getKeyValuePairsFromJson_textValue), Assertion Roulette (Method: getKeyValuePairsFromJson_textValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 54: Magic Number Test (Method: getKeyValuePairsFromJson_jcrTitleValue), Assertion Roulette (Method: getKeyValuePairsFromJson_jcrTitleValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 56: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_jcrTitleValue), Assertion Roulette (Method: getKeyValuePairsFromJson_jcrTitleValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 58: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_jcrTitleValue), Assertion Roulette (Method: getKeyValuePairsFromJson_jcrTitleValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 36: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_textValue), Assertion Roulette (Method: getKeyValuePairsFromJson_textValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 38: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_textValue), Assertion Roulette (Method: getKeyValuePairsFromJson_textValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 57: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_jcrTitleValue), Assertion Roulette (Method: getKeyValuePairsFromJson_jcrTitleValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 35: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_textValue), Assertion Roulette (Method: getKeyValuePairsFromJson_textValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 37: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_textValue), Assertion Roulette (Method: getKeyValuePairsFromJson_textValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 55: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_jcrTitleValue), Assertion Roulette (Method: getKeyValuePairsFromJson_jcrTitleValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 51: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_jcrTitleValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PropertyPredicateImplTest.java - Line 31: Lazy Test (Method: getKeyValuePairsFromJson_jcrTitleValue, getKeyValuePairsFromJson_textValue), Eager Test (Method: getKeyValuePairsFromJson_textValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/assetkit/impl/AssetKitImplTest.java - Line 71: Magic Number Test (Method: getAssets), Lazy Test (Method: getAssets_withFilter, getAssets)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/assetkit/impl/AssetKitImplTest.java - Line 81: Magic Number Test (Method: getAssets_withFilter), Lazy Test (Method: getAssets_withFilter, getAssets)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/EditorLinksImplTest.java - Line 138: Lazy Test (Method: isReady_NotReadyDueToRunmode, isReady_NotReady, isReady), Assertion Roulette (Method: isReady_NotReadyDueToRunmode)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/EditorLinksImplTest.java - Line 115: Lazy Test (Method: isReady_NotReadyDueToRunmode, isReady_NotReady, isReady), Assertion Roulette (Method: isReady)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/EditorLinksImplTest.java - Line 126: Lazy Test (Method: isReady_NotReadyDueToRunmode, isReady_NotReady, isReady), Assertion Roulette (Method: isReady_NotReady)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/EditorLinksImplTest.java - Line 104: Lazy Test (Method: isEmpty_NotEmpty, isEmpty), Assertion Roulette (Method: isEmpty_NotEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/EditorLinksImplTest.java - Line 93: Lazy Test (Method: isEmpty_NotEmpty, isEmpty), Assertion Roulette (Method: isEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 68: Lazy Test (Method: getSrc_WithFallback, getSrc), Assertion Roulette (Method: getSrc)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 77: Lazy Test (Method: getSrc_WithFallback, getSrc), Assertion Roulette (Method: getSrc_WithFallback)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 152: Lazy Test (Method: isReady_NotReady, isReady_NoRenditionName, isReady_NoFallback, isReady), Assertion Roulette (Method: isReady_NotReady)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 145: Lazy Test (Method: isReady_NotReady, isReady_NoRenditionName, isReady_NoFallback, isReady), Assertion Roulette (Method: isReady_NoRenditionName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 138: Lazy Test (Method: isReady_NotReady, isReady_NoRenditionName, isReady_NoFallback, isReady), Assertion Roulette (Method: isReady_NoFallback)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 131: Lazy Test (Method: isReady_NotReady, isReady_NoRenditionName, isReady_NoFallback, isReady), Assertion Roulette (Method: isReady)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 124: Lazy Test (Method: isEmpty_NotEmpty, isEmpty_NoRenditionName, isEmpty_NoFallback, isEmpty), Assertion Roulette (Method: isEmpty_NotEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 117: Lazy Test (Method: isEmpty_NotEmpty, isEmpty_NoRenditionName, isEmpty_NoFallback, isEmpty), Assertion Roulette (Method: isEmpty_NoRenditionName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 110: Lazy Test (Method: isEmpty_NotEmpty, isEmpty_NoRenditionName, isEmpty_NoFallback, isEmpty), Assertion Roulette (Method: isEmpty_NoFallback)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/ImageImplTest.java - Line 103: Lazy Test (Method: isEmpty_NotEmpty, isEmpty_NoRenditionName, isEmpty_NoFallback, isEmpty), Assertion Roulette (Method: isEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 90: Lazy Test (Method: isReady_NotReady, isReady), Assertion Roulette (Method: isReady_NotReady)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 83: Lazy Test (Method: isReady_NotReady, isReady), Assertion Roulette (Method: isReady)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 76: Lazy Test (Method: isEmpty_NotEmpty, isEmpty), Assertion Roulette (Method: isEmpty_NotEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 69: Lazy Test (Method: isEmpty_NotEmpty, isEmpty), Assertion Roulette (Method: isEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 105: Lazy Test (Method: isVideoAsset_VideoAsset, isVideoAsset), Assertion Roulette (Method: isVideoAsset_VideoAsset)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 97: Lazy Test (Method: isVideoAsset_VideoAsset, isVideoAsset), Assertion Roulette (Method: isVideoAsset)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 133: Lazy Test (Method: isLegacyMode_Off, isLegacyMode_On, isLegacyMode_WithAllConfigsAndNoLegacyMode, isLegacyMode_WithRenditionRegexAndNoLegacyMode, isLegacyMode_WithComputedPropertyAndNoLegacyMode, isLegacyMode_NoLegacyConfigOrLegacyMode), Assertion Roulette (Method: isLegacyMode_WithAllConfigsAndNoLegacyMode)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 140: Lazy Test (Method: isLegacyMode_Off, isLegacyMode_On, isLegacyMode_WithAllConfigsAndNoLegacyMode, isLegacyMode_WithRenditionRegexAndNoLegacyMode, isLegacyMode_WithComputedPropertyAndNoLegacyMode, isLegacyMode_NoLegacyConfigOrLegacyMode), Assertion Roulette (Method: isLegacyMode_On)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 112: Lazy Test (Method: isLegacyMode_Off, isLegacyMode_On, isLegacyMode_WithAllConfigsAndNoLegacyMode, isLegacyMode_WithRenditionRegexAndNoLegacyMode, isLegacyMode_WithComputedPropertyAndNoLegacyMode, isLegacyMode_NoLegacyConfigOrLegacyMode), Assertion Roulette (Method: isLegacyMode_NoLegacyConfigOrLegacyMode)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 147: Lazy Test (Method: isLegacyMode_Off, isLegacyMode_On, isLegacyMode_WithAllConfigsAndNoLegacyMode, isLegacyMode_WithRenditionRegexAndNoLegacyMode, isLegacyMode_WithComputedPropertyAndNoLegacyMode, isLegacyMode_NoLegacyConfigOrLegacyMode), Assertion Roulette (Method: isLegacyMode_Off)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 119: Lazy Test (Method: isLegacyMode_Off, isLegacyMode_On, isLegacyMode_WithAllConfigsAndNoLegacyMode, isLegacyMode_WithRenditionRegexAndNoLegacyMode, isLegacyMode_WithComputedPropertyAndNoLegacyMode, isLegacyMode_NoLegacyConfigOrLegacyMode), Assertion Roulette (Method: isLegacyMode_WithComputedPropertyAndNoLegacyMode)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/VideoImplTest.java - Line 126: Lazy Test (Method: isLegacyMode_Off, isLegacyMode_On, isLegacyMode_WithAllConfigsAndNoLegacyMode, isLegacyMode_WithRenditionRegexAndNoLegacyMode, isLegacyMode_WithComputedPropertyAndNoLegacyMode, isLegacyMode_NoLegacyConfigOrLegacyMode), Assertion Roulette (Method: isLegacyMode_WithRenditionRegexAndNoLegacyMode)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 168: Lazy Test (Method: isReady_NotReady, isReady), Assertion Roulette (Method: isReady_NotReady)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 161: Lazy Test (Method: isReady_NotReady, isReady), Assertion Roulette (Method: isReady)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 154: Lazy Test (Method: isEmpty_NotEmpty, isEmpty_EmptyText, isEmpty_NullValue), Assertion Roulette (Method: isEmpty_NotEmpty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 147: Lazy Test (Method: isEmpty_NotEmpty, isEmpty_EmptyText, isEmpty_NullValue), Assertion Roulette (Method: isEmpty_EmptyText)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 140: Lazy Test (Method: isEmpty_NotEmpty, isEmpty_EmptyText, isEmpty_NullValue), Assertion Roulette (Method: isEmpty_NullValue)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 89: Lazy Test (Method: getFormat_Number, getFormat_Date, getFormat), Assertion Roulette (Method: getFormat_Date)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 99: Lazy Test (Method: getFormat_Number, getFormat_Date, getFormat), Assertion Roulette (Method: getFormat_Number)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 79: Lazy Test (Method: getFormat_Number, getFormat_Date, getFormat), Assertion Roulette (Method: getFormat)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 123: Lazy Test (Method: getPropertyName_ComputedProperty, getPropertyName), Assertion Roulette (Method: getPropertyName)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/details/impl/MetadataImplTest.java - Line 133: Lazy Test (Method: getPropertyName_ComputedProperty, getPropertyName), Assertion Roulette (Method: getPropertyName_ComputedProperty)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/actions/impl/ActionHelperImplTest.java - Line 109: Magic Number Test (Method: getAssetsFromQueryParameter), Assertion Roulette (Method: getAssetsFromQueryParameter)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/actions/impl/ActionHelperImplTest.java - Line 122: Magic Number Test (Method: getAllowedValuesFromQueryParameter), Assertion Roulette (Method: getAllowedValuesFromQueryParameter)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/actions/impl/ActionHelperImplTest.java - Line 123: Magic Number Test (Method: getAllowedValuesFromQueryParameter), Assertion Roulette (Method: getAllowedValuesFromQueryParameter)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/actions/impl/AssetDownloadHelperImplTest.java - Line 64: Lazy Test (Method: testGetMaxContentSizeLimit_NullConfig, testGetMaxContentSizeLimit), Assertion Roulette (Method: testGetMaxContentSizeLimit)
+Class asset-share-commons/core/src/test/java/com/adobe/aem/commons/assetshare/components/actions/impl/AssetDownloadHelperImplTest.java - Line 74: Lazy Test (Method: testGetMaxContentSizeLimit_NullConfig, testGetMaxContentSizeLimit), Assertion Roulette (Method: testGetMaxContentSizeLimit_NullConfig)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/ExpressionDownloadArchiveNamerTest.java - Line 72: Lazy Test (Method: getArchiveFilePath_withDownloadExtensionResolver, getArchiveFilePath), Lazy Test (Method: getArchiveFilePath_withDownloadExtensionResolver, getArchiveFilePath), Assertion Roulette (Method: getArchiveFilePath)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/ExpressionDownloadArchiveNamerTest.java - Line 85: Lazy Test (Method: getArchiveFilePath_withDownloadExtensionResolver, getArchiveFilePath), Lazy Test (Method: getArchiveFilePath_withDownloadExtensionResolver, getArchiveFilePath), Assertion Roulette (Method: getArchiveFilePath_withDownloadExtensionResolver)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 25: Magic Number Test (Method: getLocalDateTime_EST), Assertion Roulette (Method: getLocalDateTime_EST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 26: Magic Number Test (Method: getLocalDateTime_EST), Assertion Roulette (Method: getLocalDateTime_EST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 27: Magic Number Test (Method: getLocalDateTime_EST), Assertion Roulette (Method: getLocalDateTime_EST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 28: Magic Number Test (Method: getLocalDateTime_EST), Assertion Roulette (Method: getLocalDateTime_EST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 29: Magic Number Test (Method: getLocalDateTime_EST), Assertion Roulette (Method: getLocalDateTime_EST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 39: Magic Number Test (Method: getLocalDateTime_PST), Assertion Roulette (Method: getLocalDateTime_PST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 40: Magic Number Test (Method: getLocalDateTime_PST), Assertion Roulette (Method: getLocalDateTime_PST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 41: Magic Number Test (Method: getLocalDateTime_PST), Assertion Roulette (Method: getLocalDateTime_PST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 42: Magic Number Test (Method: getLocalDateTime_PST), Assertion Roulette (Method: getLocalDateTime_PST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/content/renditions/download/async/impl/AsyncAssetRenditionsDownloadServletTest.java - Line 43: Magic Number Test (Method: getLocalDateTime_PST), Assertion Roulette (Method: getLocalDateTime_PST)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 96: Magic Number Test (Method: getAssets), Assertion Roulette (Method: getAssets)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 250: Magic Number Test (Method: getAssetRenditionGroups), Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 267: Magic Number Test (Method: getAssetRenditionGroups), Verbose Test (Method: getAssetRenditionGroups), Duplicate Assert (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 274: Magic Number Test (Method: getAssetRenditionGroups), Verbose Test (Method: getAssetRenditionGroups), Duplicate Assert (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 268: Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 269: Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 270: Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 271: Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 272: Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 275: Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 276: Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 277: Verbose Test (Method: getAssetRenditionGroups), Assertion Roulette (Method: getAssetRenditionGroups)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 129: Lazy Test (Method: getZipFileName_WithExtension, getZipFileName_Default, getZipFileName), Lazy Test (Method: getZipFileName_WithExtension, getZipFileName_Default, getZipFileName), Assertion Roulette (Method: getZipFileName_Default)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 139: Lazy Test (Method: getZipFileName_WithExtension, getZipFileName_Default, getZipFileName), Lazy Test (Method: getZipFileName_WithExtension, getZipFileName_Default, getZipFileName), Assertion Roulette (Method: getZipFileName_WithExtension)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 119: Lazy Test (Method: getZipFileName_WithExtension, getZipFileName_Default, getZipFileName), Lazy Test (Method: getZipFileName_WithExtension, getZipFileName_Default, getZipFileName), Assertion Roulette (Method: getZipFileName)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 192: Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getDownloadContentSize), Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getDownloadContentSize), Eager Test (Method: getDownloadContentSize_NoMaxLimit), Assertion Roulette (Method: getDownloadContentSize_NoMaxLimit)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 169: Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getDownloadContentSize), Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getDownloadContentSize), Assertion Roulette (Method: getDownloadContentSize)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 181: Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getDownloadContentSize), Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getDownloadContentSize), Eager Test (Method: getDownloadContentSize_EmptyAssets), Assertion Roulette (Method: getDownloadContentSize_EmptyAssets)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 148: Lazy Test (Method: getMaxContentSize_EmptyAssets, getMaxContentSize), Lazy Test (Method: getMaxContentSize_EmptyAssets, getMaxContentSize), Assertion Roulette (Method: getMaxContentSize)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 159: Lazy Test (Method: getMaxContentSize_EmptyAssets, getMaxContentSize), Lazy Test (Method: getMaxContentSize_EmptyAssets, getMaxContentSize), Assertion Roulette (Method: getMaxContentSize_EmptyAssets)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 106: Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getAssets_empty, getAssets), Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getAssets_empty, getAssets)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 180: Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getAssets_empty, getAssets), Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getAssets_empty, getAssets), Eager Test (Method: getDownloadContentSize_EmptyAssets), Assertion Roulette (Method: getDownloadContentSize_EmptyAssets)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 92: Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getAssets_empty, getAssets), Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getAssets_empty, getAssets)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 191: Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getAssets_empty, getAssets), Lazy Test (Method: getDownloadContentSize_NoMaxLimit, getDownloadContentSize_EmptyAssets, getAssets_empty, getAssets), Eager Test (Method: getDownloadContentSize_NoMaxLimit), Assertion Roulette (Method: getDownloadContentSize_NoMaxLimit)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 216: Lazy Test (Method: isLegacyMode_No_WithGroups, isLegacyMode_No, isLegacyMode_Yes_WithMode, isLegacyMode_Yes), Lazy Test (Method: isLegacyMode_No_WithGroups, isLegacyMode_No, isLegacyMode_Yes_WithMode, isLegacyMode_Yes)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 236: Lazy Test (Method: isLegacyMode_No_WithGroups, isLegacyMode_No, isLegacyMode_Yes_WithMode, isLegacyMode_Yes), Lazy Test (Method: isLegacyMode_No_WithGroups, isLegacyMode_No, isLegacyMode_Yes_WithMode, isLegacyMode_Yes)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 200: Lazy Test (Method: isLegacyMode_No_WithGroups, isLegacyMode_No, isLegacyMode_Yes_WithMode, isLegacyMode_Yes), Lazy Test (Method: isLegacyMode_No_WithGroups, isLegacyMode_No, isLegacyMode_Yes_WithMode, isLegacyMode_Yes)
+Class asset-share-commons/core.cloud/src/test/java/com/adobe/aem/commons/assetshare/components/actions/download/impl/DownloadImplTest.java - Line 208: Lazy Test (Method: isLegacyMode_No_WithGroups, isLegacyMode_No, isLegacyMode_Yes_WithMode, isLegacyMode_Yes), Lazy Test (Method: isLegacyMode_No_WithGroups, isLegacyMode_No, isLegacyMode_Yes_WithMode, isLegacyMode_Yes)

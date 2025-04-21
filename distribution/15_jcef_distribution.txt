@@ -1,0 +1,81 @@
+Summary:
+Instances of test smells identified: 5
+Number of different types of test smells: 3
+Number of different test classes: 1
+Number of different test methods: 1
+
+Instances by test smells:
+Assertion Roulette: 3
+Conditional Test Logic: 0
+Constructor Initialization: 0
+Duplicate Assert: 0
+Eager Test: 1
+EmptyTest: 0
+Exception Catching Throwing: 0
+General Fixture: 0
+IgnoredTest: 0
+Lazy Test: 0
+Magic Number Test: 0
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 0
+Verbose Test: 1
+
+Distribution by Classes:
+Assertion Roulette: 1
+Conditional Test Logic: 0
+Constructor Initialization: 0
+Duplicate Assert: 0
+Eager Test: 1
+EmptyTest: 0
+Exception Catching Throwing: 0
+General Fixture: 0
+IgnoredTest: 0
+Lazy Test: 0
+Magic Number Test: 0
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 0
+Verbose Test: 1
+
+Distribution by Methods:
+Assertion Roulette: 1
+Conditional Test Logic: 0
+Constructor Initialization: 0
+Duplicate Assert: 0
+Eager Test: 1
+EmptyTest: 0
+Exception Catching Throwing: 0
+General Fixture: 0
+IgnoredTest: 0
+Lazy Test: 0
+Magic Number Test: 0
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 0
+Verbose Test: 1
+
+Test classes:
+jcef/java_tests/tests/junittests/TestFrameTest.java
+
+Test methods:
+minimal
+
+Test smells on the same lines and classes (with more than one test smell):
+Class jcef/java_tests/tests/junittests/TestFrameTest.java - Line 28: Verbose Test (Method: minimal), Eager Test (Method: minimal)
+Class jcef/java_tests/tests/junittests/TestFrameTest.java - Line 60: Verbose Test (Method: minimal), Eager Test (Method: minimal)
+Class jcef/java_tests/tests/junittests/TestFrameTest.java - Line 62: Verbose Test (Method: minimal), Assertion Roulette (Method: minimal)
+Class jcef/java_tests/tests/junittests/TestFrameTest.java - Line 63: Verbose Test (Method: minimal), Assertion Roulette (Method: minimal)
+Class jcef/java_tests/tests/junittests/TestFrameTest.java - Line 64: Verbose Test (Method: minimal), Assertion Roulette (Method: minimal)

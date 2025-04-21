@@ -1,0 +1,389 @@
+Summary:
+Instances of test smells identified: 189
+Number of different types of test smells: 9
+Number of different test classes: 12
+Number of different test methods: 86
+
+Instances by test smells:
+Assertion Roulette: 118
+Conditional Test Logic: 4
+Constructor Initialization: 0
+Duplicate Assert: 0
+Eager Test: 22
+EmptyTest: 0
+Exception Catching Throwing: 5
+General Fixture: 0
+IgnoredTest: 1
+Lazy Test: 19
+Magic Number Test: 8
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 2
+Verbose Test: 10
+
+Distribution by Classes:
+Assertion Roulette: 11
+Conditional Test Logic: 3
+Constructor Initialization: 0
+Duplicate Assert: 0
+Eager Test: 5
+EmptyTest: 0
+Exception Catching Throwing: 2
+General Fixture: 0
+IgnoredTest: 1
+Lazy Test: 8
+Magic Number Test: 3
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 2
+Verbose Test: 4
+
+Distribution by Methods:
+Assertion Roulette: 76
+Conditional Test Logic: 4
+Constructor Initialization: 0
+Duplicate Assert: 0
+Eager Test: 22
+EmptyTest: 0
+Exception Catching Throwing: 5
+General Fixture: 0
+IgnoredTest: 1
+Lazy Test: 17
+Magic Number Test: 7
+Mystery Guest: 0
+Print Statement: 0
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 2
+Verbose Test: 10
+
+Test classes:
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/options/PasswordReaderTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/options/JobNameConfigurationTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroSchemaTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BenchJdbcAvroJobTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlAvroJobTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/ParallelQueryBuilderTest.java
+dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java
+
+Test methods:
+testCtorRawSqlWithWhere
+shouldBuildParallelQueriesGivenRangeAndParallelism3
+shouldExit50OnFailedValidationException
+shouldConvertBitSqlTypeWithNoPrecisionToBoolean
+shouldConvertDateSqlTypeWithAvroLogicalType
+shouldConfigurePartitionColumnAndPartitionPeriodForHourly
+shouldBuildSingleQueryWhenParallelismIsMoreThanMaxMin
+shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart
+shouldGetDatabaseTableNameFromFirstNonNullMetaData
+shouldRunJdbcAvroJob
+shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay
+testRawSqlWithPartition
+shouldConfigureJobNameWhenJobNameIsAuto
+shouldFailOnInvalidDriver
+shouldConfigurePartitionForHourlySchedule
+shouldFailOnNullTableName
+testCtorRawSqlWithoutWhere
+shouldFailOnMissingPartition
+shouldCreateSchemaWithLogicalTypes
+shouldCreateParallelQueriesWithPartitionColumn
+shouldCreateSchemaWithCustomSchemaName
+shouldGetDatabaseTableNameFromMetaData
+shouldRunQueryAndReturnReplicationNotDelayed
+shouldBeNotDelayedWithHourlyPartitionPeriod
+testCtorCopyWithConditionNotEquals
+shouldFailOnEmptyInput
+shouldHaveDefaultExitCode
+shouldCreateValidSqlQueryFromUserQuery
+shouldConfigureDBeamVersionPipelineOptions
+shouldConfigurePartitionColumnAndLimitForSqlFile
+shouldFailWithNotEnoughRows
+shouldBuildMultipleQueriesWhenQueryingFromTwoRows
+shouldThrownExceptionInCaseFailedPipelineResult
+shouldFailOnInvalidTableName
+testItRemovesTrailingSemicolon
+shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition
+shouldConfigurePartitionForFullIsoString
+shouldFailAfterFailureToCancelAfterTimeout
+shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile
+shouldBeReplicationDelayedWhenReplicatedInsidePartition
+shouldDefaultTableNameWhenMetaDataHasNullTableName
+shouldConfigurePartitionColumn
+shouldBuildParallelQueriesGivenRangeThatDoesNotDivideEqually
+shouldConfigureJobNameWithEmptyTableName
+shouldCreateParallelQueries
+shouldConfigureLimitForSqlFile
+testCtorFromTable
+shouldCancelInCaseOfNullState
+shouldWorkWithMonthlyPartitionPeriod
+testRawSqlWithCte
+shouldCreatePsqlAvroJob
+shouldBuildSingleQueryWhenMaxMinIsTheSame
+shouldConvertIntegerSqlTypeToInteger
+testRawSqlWithLimit
+testRawSqlwithParallelization
+shouldConvertBitSqlTypeWithPrecision2ToBytes
+shouldDecryptPasswordOnpasswordFileKmsEncryptedParameter
+shouldConfigurePartitionColumnAndLimit
+shouldRunJdbcAvroJobDataOnly
+shouldDefaultTableNameWhenMetaDataHasEmptyTableName
+shouldConvertIntegerWithLongColumnClassNameToLong
+shouldRunAvroJobPreCommands
+testItGeneratesQueryForLimits
+testCtorCopyWithLimitNotEquals
+shouldBuildSingleQueryWhenParallelismIsOne
+shouldRunQueryAndReturnReplicationDelayed
+shouldFailOnMissingInput
+shouldDefaultConversionToStringType
+shouldBeDelayedWithHourlyPartitionPeriod
+shouldConfigureLimit
+shouldEncodeResultSetToValidAvro
+shouldCorrectlyEncodeUnsignedIntToAvroLong
+shouldConfigurePartitionColumnAndPartitionPeriod
+shouldConvertBigIntSqlTypeToLong
+testRawSqlMultiline
+shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart
+shouldConfigurePartition
+shouldConvertDateSqlTypeWithoutAvroLogicalType
+shouldCancelInCaseOfTimeout
+shouldCreateParallelQueriesWithSqlFile
+shouldCreateSchema
+shouldConfigurePartitionForMonthlySchedule
+shouldConfigureJobName
+shouldSucceedOnValidDriverAndPartition
+shouldRunJdbcAvroJobSqlFile
+testRawSqlWithComments
+
+Test smells on the same lines and classes (with more than one test smell):
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/options/PasswordReaderTest.java - Line 74: Verbose Test (Method: shouldDecryptPasswordOnpasswordFileKmsEncryptedParameter), Eager Test (Method: shouldDecryptPasswordOnpasswordFileKmsEncryptedParameter)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/options/PasswordReaderTest.java - Line 84: Verbose Test (Method: shouldDecryptPasswordOnpasswordFileKmsEncryptedParameter), Eager Test (Method: shouldDecryptPasswordOnpasswordFileKmsEncryptedParameter)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/options/PasswordReaderTest.java - Line 86: Verbose Test (Method: shouldDecryptPasswordOnpasswordFileKmsEncryptedParameter), Assertion Roulette (Method: shouldDecryptPasswordOnpasswordFileKmsEncryptedParameter)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/options/JobNameConfigurationTest.java - Line 69: Magic Number Test (Method: shouldConfigureJobNameWithEmptyTableName), Assertion Roulette (Method: shouldConfigureJobNameWithEmptyTableName)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 99: Magic Number Test (Method: shouldCreateSchema), Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema), Conditional Test Logic (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 190: Magic Number Test (Method: shouldEncodeResultSetToValidAvro), Verbose Test (Method: shouldEncodeResultSetToValidAvro), Assertion Roulette (Method: shouldEncodeResultSetToValidAvro)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 197: Magic Number Test (Method: shouldEncodeResultSetToValidAvro), Verbose Test (Method: shouldEncodeResultSetToValidAvro), Assertion Roulette (Method: shouldEncodeResultSetToValidAvro)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 75: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 76: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 77: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 78: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 79: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 80: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 81: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 82: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 83: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 84: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 85: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 86: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 87: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 88: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 89: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 90: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 91: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 92: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 93: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 94: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 95: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 96: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 97: Verbose Test (Method: shouldCreateSchema), Conditional Test Logic (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 98: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema), Conditional Test Logic (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 100: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema), Conditional Test Logic (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 101: Verbose Test (Method: shouldCreateSchema), Conditional Test Logic (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 102: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 103: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 104: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 105: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 106: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 107: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 108: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 109: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 110: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 111: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 112: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 113: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 114: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 115: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 116: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 117: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 118: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 119: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 120: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 121: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 122: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 123: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 124: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 125: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 126: Verbose Test (Method: shouldCreateSchema), Assertion Roulette (Method: shouldCreateSchema)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 177: Verbose Test (Method: shouldEncodeResultSetToValidAvro), Conditional Test Logic (Method: shouldEncodeResultSetToValidAvro)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 178: Verbose Test (Method: shouldEncodeResultSetToValidAvro), Conditional Test Logic (Method: shouldEncodeResultSetToValidAvro)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 179: Verbose Test (Method: shouldEncodeResultSetToValidAvro), Conditional Test Logic (Method: shouldEncodeResultSetToValidAvro)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 198: Verbose Test (Method: shouldEncodeResultSetToValidAvro), Assertion Roulette (Method: shouldEncodeResultSetToValidAvro)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroRecordTest.java - Line 213: Verbose Test (Method: shouldEncodeResultSetToValidAvro), Assertion Roulette (Method: shouldEncodeResultSetToValidAvro)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroSchemaTest.java - Line 73: Lazy Test (Method: shouldGetDatabaseTableNameFromFirstNonNullMetaData, shouldDefaultTableNameWhenMetaDataHasNullTableName, shouldDefaultTableNameWhenMetaDataHasEmptyTableName, shouldGetDatabaseTableNameFromMetaData), Assertion Roulette (Method: shouldGetDatabaseTableNameFromFirstNonNullMetaData)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroSchemaTest.java - Line 45: Lazy Test (Method: shouldGetDatabaseTableNameFromFirstNonNullMetaData, shouldDefaultTableNameWhenMetaDataHasNullTableName, shouldDefaultTableNameWhenMetaDataHasEmptyTableName, shouldGetDatabaseTableNameFromMetaData), Assertion Roulette (Method: shouldGetDatabaseTableNameFromMetaData)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroSchemaTest.java - Line 54: Lazy Test (Method: shouldGetDatabaseTableNameFromFirstNonNullMetaData, shouldDefaultTableNameWhenMetaDataHasNullTableName, shouldDefaultTableNameWhenMetaDataHasEmptyTableName, shouldGetDatabaseTableNameFromMetaData), Assertion Roulette (Method: shouldDefaultTableNameWhenMetaDataHasEmptyTableName)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/avro/JdbcAvroSchemaTest.java - Line 63: Lazy Test (Method: shouldGetDatabaseTableNameFromFirstNonNullMetaData, shouldDefaultTableNameWhenMetaDataHasNullTableName, shouldDefaultTableNameWhenMetaDataHasEmptyTableName, shouldGetDatabaseTableNameFromMetaData), Assertion Roulette (Method: shouldDefaultTableNameWhenMetaDataHasNullTableName)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 200: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed), Eager Test (Method: shouldRunQueryAndReturnReplicationNotDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 176: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed), Eager Test (Method: shouldRunQueryAndReturnReplicationDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 166: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed), Eager Test (Method: shouldRunQueryAndReturnReplicationDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 190: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed), Eager Test (Method: shouldRunQueryAndReturnReplicationNotDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 193: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldSucceedOnValidDriverAndPartition, shouldFailOnMissingPartition, shouldFailOnInvalidDriver), Eager Test (Method: shouldRunQueryAndReturnReplicationNotDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 72: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldSucceedOnValidDriverAndPartition, shouldFailOnMissingPartition, shouldFailOnInvalidDriver), Eager Test (Method: shouldSucceedOnValidDriverAndPartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 169: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldSucceedOnValidDriverAndPartition, shouldFailOnMissingPartition, shouldFailOnInvalidDriver), Eager Test (Method: shouldRunQueryAndReturnReplicationDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 54: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldSucceedOnValidDriverAndPartition, shouldFailOnMissingPartition, shouldFailOnInvalidDriver), Eager Test (Method: shouldFailOnInvalidDriver)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 62: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldSucceedOnValidDriverAndPartition, shouldFailOnMissingPartition, shouldFailOnInvalidDriver), Eager Test (Method: shouldFailOnMissingPartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 64: Lazy Test (Method: shouldSucceedOnValidDriverAndPartition, shouldFailOnMissingPartition, shouldFailOnInvalidDriver), Eager Test (Method: shouldFailOnMissingPartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 56: Lazy Test (Method: shouldSucceedOnValidDriverAndPartition, shouldFailOnMissingPartition, shouldFailOnInvalidDriver), Eager Test (Method: shouldFailOnInvalidDriver)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 76: Lazy Test (Method: shouldSucceedOnValidDriverAndPartition, shouldFailOnMissingPartition, shouldFailOnInvalidDriver), Eager Test (Method: shouldSucceedOnValidDriverAndPartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 180: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed), Eager Test (Method: shouldRunQueryAndReturnReplicationDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 204: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed), Eager Test (Method: shouldRunQueryAndReturnReplicationNotDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 96: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Assertion Roulette (Method: shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 136: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Assertion Roulette (Method: shouldWorkWithMonthlyPartitionPeriod)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 106: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Assertion Roulette (Method: shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 203: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Eager Test (Method: shouldRunQueryAndReturnReplicationNotDelayed), Assertion Roulette (Method: shouldRunQueryAndReturnReplicationNotDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 146: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Assertion Roulette (Method: shouldBeDelayedWithHourlyPartitionPeriod)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 179: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Eager Test (Method: shouldRunQueryAndReturnReplicationDelayed), Assertion Roulette (Method: shouldRunQueryAndReturnReplicationDelayed)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 116: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Assertion Roulette (Method: shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 86: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Assertion Roulette (Method: shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 156: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Assertion Roulette (Method: shouldBeNotDelayedWithHourlyPartitionPeriod)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/PsqlReplicationCheckTest.java - Line 126: Lazy Test (Method: shouldRunQueryAndReturnReplicationNotDelayed, shouldRunQueryAndReturnReplicationDelayed, shouldBeNotDelayedWithHourlyPartitionPeriod, shouldBeDelayedWithHourlyPartitionPeriod, shouldWorkWithMonthlyPartitionPeriod, shouldBeReplicationDelayedWhenReplicatedInsidePartition, shouldBeReplicationDelayedWhenReplicatedBeforePartitionStart, shouldBeReplicationDelayedWhenReplicatedUpToPartitionStart, shouldBeNotReplicationDelayedWhenReplicatedUntilEndTheNextDay, shouldBeNotReplicationDelayedWhenReplicatedUntilEndOfPartition), Assertion Roulette (Method: shouldBeReplicationDelayedWhenReplicatedInsidePartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 116: Magic Number Test (Method: shouldRunJdbcAvroJob), Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 175: Magic Number Test (Method: shouldRunJdbcAvroJobSqlFile), Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 266: Magic Number Test (Method: shouldHaveDefaultExitCode), Assertion Roulette (Method: shouldHaveDefaultExitCode)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 272: Magic Number Test (Method: shouldExit50OnFailedValidationException), Assertion Roulette (Method: shouldExit50OnFailedValidationException)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 86: Verbose Test (Method: shouldRunJdbcAvroJob), Lazy Test (Method: shouldRunAvroJobPreCommands, shouldRunJdbcAvroJobSqlFile, shouldRunJdbcAvroJobDataOnly, shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 101: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 102: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 103: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 104: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 105: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 106: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 107: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 108: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 109: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 110: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 111: Verbose Test (Method: shouldRunJdbcAvroJob), Assertion Roulette (Method: shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 146: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Lazy Test (Method: shouldRunAvroJobPreCommands, shouldRunJdbcAvroJobSqlFile, shouldRunJdbcAvroJobDataOnly, shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 160: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 161: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 162: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 163: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 164: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 165: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 166: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 167: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 168: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 169: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 170: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 176: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 177: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 178: Verbose Test (Method: shouldRunJdbcAvroJobSqlFile), Assertion Roulette (Method: shouldRunJdbcAvroJobSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 185: Verbose Test (Method: shouldRunAvroJobPreCommands), Lazy Test (Method: shouldRunAvroJobPreCommands, shouldRunJdbcAvroJobSqlFile, shouldRunJdbcAvroJobDataOnly, shouldRunJdbcAvroJob)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 201: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 202: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 203: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 204: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 205: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 206: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 207: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 208: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 211: Verbose Test (Method: shouldRunAvroJobPreCommands), Exception Catching Throwing (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 212: Verbose Test (Method: shouldRunAvroJobPreCommands), Exception Catching Throwing (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 213: Verbose Test (Method: shouldRunAvroJobPreCommands), Conditional Test Logic (Method: shouldRunAvroJobPreCommands), Exception Catching Throwing (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 214: Verbose Test (Method: shouldRunAvroJobPreCommands), Conditional Test Logic (Method: shouldRunAvroJobPreCommands), Exception Catching Throwing (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 215: Verbose Test (Method: shouldRunAvroJobPreCommands), Conditional Test Logic (Method: shouldRunAvroJobPreCommands), Exception Catching Throwing (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 216: Verbose Test (Method: shouldRunAvroJobPreCommands), Exception Catching Throwing (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 219: Verbose Test (Method: shouldRunAvroJobPreCommands), Assertion Roulette (Method: shouldRunAvroJobPreCommands)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 226: Lazy Test (Method: shouldFailOnEmptyInput, shouldFailOnMissingInput, shouldConfigureDBeamVersionPipelineOptions, shouldFailWithNotEnoughRows), Eager Test (Method: shouldFailWithNotEnoughRows)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 246: Lazy Test (Method: shouldFailOnEmptyInput, shouldFailOnMissingInput, shouldConfigureDBeamVersionPipelineOptions, shouldFailWithNotEnoughRows), Eager Test (Method: shouldConfigureDBeamVersionPipelineOptions)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/JdbcAvroJobTest.java - Line 260: Eager Test (Method: shouldConfigureDBeamVersionPipelineOptions), Assertion Roulette (Method: shouldConfigureDBeamVersionPipelineOptions)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 63: Verbose Test (Method: shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldThrownExceptionInCaseFailedPipelineResult)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 64: Verbose Test (Method: shouldThrownExceptionInCaseFailedPipelineResult), Lazy Test (Method: shouldFailAfterFailureToCancelAfterTimeout, shouldCancelInCaseOfNullState, shouldCancelInCaseOfTimeout, shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldThrownExceptionInCaseFailedPipelineResult)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 65: Verbose Test (Method: shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldThrownExceptionInCaseFailedPipelineResult)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 66: Verbose Test (Method: shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldThrownExceptionInCaseFailedPipelineResult)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 67: Verbose Test (Method: shouldThrownExceptionInCaseFailedPipelineResult), Assertion Roulette (Method: shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldThrownExceptionInCaseFailedPipelineResult)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 68: Verbose Test (Method: shouldThrownExceptionInCaseFailedPipelineResult), Assertion Roulette (Method: shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldThrownExceptionInCaseFailedPipelineResult)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 69: Verbose Test (Method: shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldThrownExceptionInCaseFailedPipelineResult)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 101: Verbose Test (Method: shouldCancelInCaseOfTimeout), Exception Catching Throwing (Method: shouldCancelInCaseOfTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 102: Verbose Test (Method: shouldCancelInCaseOfTimeout), Lazy Test (Method: shouldFailAfterFailureToCancelAfterTimeout, shouldCancelInCaseOfNullState, shouldCancelInCaseOfTimeout, shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldCancelInCaseOfTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 103: Verbose Test (Method: shouldCancelInCaseOfTimeout), Exception Catching Throwing (Method: shouldCancelInCaseOfTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 104: Verbose Test (Method: shouldCancelInCaseOfTimeout), Exception Catching Throwing (Method: shouldCancelInCaseOfTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 105: Verbose Test (Method: shouldCancelInCaseOfTimeout), Assertion Roulette (Method: shouldCancelInCaseOfTimeout), Exception Catching Throwing (Method: shouldCancelInCaseOfTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 106: Verbose Test (Method: shouldCancelInCaseOfTimeout), Assertion Roulette (Method: shouldCancelInCaseOfTimeout), Exception Catching Throwing (Method: shouldCancelInCaseOfTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 107: Verbose Test (Method: shouldCancelInCaseOfTimeout), Assertion Roulette (Method: shouldCancelInCaseOfTimeout), Exception Catching Throwing (Method: shouldCancelInCaseOfTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 108: Verbose Test (Method: shouldCancelInCaseOfTimeout), Exception Catching Throwing (Method: shouldCancelInCaseOfTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 140: Verbose Test (Method: shouldCancelInCaseOfNullState), Exception Catching Throwing (Method: shouldCancelInCaseOfNullState)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 141: Verbose Test (Method: shouldCancelInCaseOfNullState), Lazy Test (Method: shouldFailAfterFailureToCancelAfterTimeout, shouldCancelInCaseOfNullState, shouldCancelInCaseOfTimeout, shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldCancelInCaseOfNullState)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 142: Verbose Test (Method: shouldCancelInCaseOfNullState), Exception Catching Throwing (Method: shouldCancelInCaseOfNullState)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 143: Verbose Test (Method: shouldCancelInCaseOfNullState), Exception Catching Throwing (Method: shouldCancelInCaseOfNullState)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 144: Verbose Test (Method: shouldCancelInCaseOfNullState), Assertion Roulette (Method: shouldCancelInCaseOfNullState), Exception Catching Throwing (Method: shouldCancelInCaseOfNullState)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 145: Verbose Test (Method: shouldCancelInCaseOfNullState), Assertion Roulette (Method: shouldCancelInCaseOfNullState), Exception Catching Throwing (Method: shouldCancelInCaseOfNullState)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 146: Verbose Test (Method: shouldCancelInCaseOfNullState), Assertion Roulette (Method: shouldCancelInCaseOfNullState), Exception Catching Throwing (Method: shouldCancelInCaseOfNullState)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 147: Verbose Test (Method: shouldCancelInCaseOfNullState), Exception Catching Throwing (Method: shouldCancelInCaseOfNullState)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 179: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 180: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Lazy Test (Method: shouldFailAfterFailureToCancelAfterTimeout, shouldCancelInCaseOfNullState, shouldCancelInCaseOfTimeout, shouldThrownExceptionInCaseFailedPipelineResult), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 181: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 182: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 183: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Assertion Roulette (Method: shouldFailAfterFailureToCancelAfterTimeout), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 184: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Assertion Roulette (Method: shouldFailAfterFailureToCancelAfterTimeout), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 185: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Assertion Roulette (Method: shouldFailAfterFailureToCancelAfterTimeout), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 186: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Assertion Roulette (Method: shouldFailAfterFailureToCancelAfterTimeout), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/jobs/BeamHelperTest.java - Line 187: Verbose Test (Method: shouldFailAfterFailureToCancelAfterTimeout), Exception Catching Throwing (Method: shouldFailAfterFailureToCancelAfterTimeout)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 192: Unknown Test (Method: testItRemovesTrailingSemicolon), Conditional Test Logic (Method: testItRemovesTrailingSemicolon)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 193: Unknown Test (Method: testItRemovesTrailingSemicolon), Conditional Test Logic (Method: testItRemovesTrailingSemicolon)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 194: Unknown Test (Method: testItRemovesTrailingSemicolon), Conditional Test Logic (Method: testItRemovesTrailingSemicolon)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 66: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Eager Test (Method: testCtorRawSqlWithWhere)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 100: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithPartition, testCtorCopyWithConditionNotEquals), Eager Test (Method: testRawSqlWithPartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 41: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Eager Test (Method: testCtorRawSqlWithoutWhere)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 76: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Lazy Test (Method: testRawSqlWithLimit, testCtorCopyWithLimitNotEquals), Eager Test (Method: testRawSqlWithLimit)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 206: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithPartition, testCtorCopyWithConditionNotEquals), Eager Test (Method: testItGeneratesQueryForLimits)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 114: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Eager Test (Method: testRawSqlMultiline)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 50: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Eager Test (Method: testCtorCopyWithConditionNotEquals)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 149: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Eager Test (Method: testRawSqlWithCte)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 87: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Eager Test (Method: testRawSqlwithParallelization)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 58: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Eager Test (Method: testCtorCopyWithLimitNotEquals)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 127: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere), Eager Test (Method: testRawSqlWithComments)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 59: Lazy Test (Method: testRawSqlWithLimit, testCtorCopyWithLimitNotEquals), Eager Test (Method: testCtorCopyWithLimitNotEquals)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 164: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testRawSqlWithCte), Assertion Roulette (Method: testRawSqlWithCte)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 36: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testCtorFromTable), Assertion Roulette (Method: testCtorFromTable)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 134: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testRawSqlWithComments), Assertion Roulette (Method: testRawSqlWithComments)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 71: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testCtorRawSqlWithWhere), Assertion Roulette (Method: testCtorRawSqlWithWhere)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 107: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testRawSqlWithPartition), Assertion Roulette (Method: testRawSqlWithPartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 45: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testCtorRawSqlWithoutWhere), Assertion Roulette (Method: testCtorRawSqlWithoutWhere)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 81: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testRawSqlWithLimit), Assertion Roulette (Method: testRawSqlWithLimit)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 53: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testCtorCopyWithConditionNotEquals), Assertion Roulette (Method: testCtorCopyWithConditionNotEquals)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 120: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testRawSqlMultiline), Assertion Roulette (Method: testRawSqlMultiline)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 61: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testCtorCopyWithLimitNotEquals), Assertion Roulette (Method: testCtorCopyWithLimitNotEquals)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 94: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithCte, testRawSqlWithComments, testRawSqlMultiline, testRawSqlWithPartition, testRawSqlwithParallelization, testRawSqlWithLimit, testCtorRawSqlWithWhere, testCtorCopyWithLimitNotEquals, testCtorCopyWithConditionNotEquals, testCtorRawSqlWithoutWhere, testCtorFromTable), Eager Test (Method: testRawSqlwithParallelization), Assertion Roulette (Method: testRawSqlwithParallelization)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderTest.java - Line 51: Lazy Test (Method: testItGeneratesQueryForLimits, testRawSqlWithPartition, testCtorCopyWithConditionNotEquals), Eager Test (Method: testCtorCopyWithConditionNotEquals)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 137: Lazy Test (Method: shouldConfigurePartitionForHourlySchedule, shouldConfigurePartitionForMonthlySchedule, shouldConfigurePartitionForFullIsoString, shouldConfigurePartition), Assertion Roulette (Method: shouldConfigurePartitionForHourlySchedule)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 117: Lazy Test (Method: shouldConfigurePartitionForHourlySchedule, shouldConfigurePartitionForMonthlySchedule, shouldConfigurePartitionForFullIsoString, shouldConfigurePartition), Assertion Roulette (Method: shouldConfigurePartitionForFullIsoString)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 105: Lazy Test (Method: shouldConfigurePartitionForHourlySchedule, shouldConfigurePartitionForMonthlySchedule, shouldConfigurePartitionForFullIsoString, shouldConfigurePartition), Eager Test (Method: shouldConfigurePartition), Assertion Roulette (Method: shouldConfigurePartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 127: Lazy Test (Method: shouldConfigurePartitionForHourlySchedule, shouldConfigurePartitionForMonthlySchedule, shouldConfigurePartitionForFullIsoString, shouldConfigurePartition), Assertion Roulette (Method: shouldConfigurePartitionForMonthlySchedule)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 258: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldCreateParallelQueries)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 291: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldCreateParallelQueriesWithPartitionColumn)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 227: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldConfigurePartitionColumnAndLimitForSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 194: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldConfigurePartitionColumnAndPartitionPeriodForHourly)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 165: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldConfigurePartitionColumnAndLimit)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 107: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Eager Test (Method: shouldConfigurePartition), Assertion Roulette (Method: shouldConfigurePartition)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 274: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldCreateParallelQueriesWithSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 211: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldConfigureLimitForSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 179: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldConfigurePartitionColumnAndPartitionPeriod)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 245: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 85: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Eager Test (Method: shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldCreateValidSqlQueryFromUserQuery)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 151: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldConfigurePartitionColumn)
+Class dbeam/dbeam-core/src/test/java/com/spotify/dbeam/args/QueryBuilderArgsTest.java - Line 95: Lazy Test (Method: shouldCreateParallelQueriesWithPartitionColumn, shouldCreateParallelQueriesWithSqlFile, shouldCreateParallelQueries, shouldConfigurePartitionColumnAndPartitionPeriodForSqlFile, shouldConfigurePartitionColumnAndLimitForSqlFile, shouldConfigureLimitForSqlFile, shouldConfigurePartitionColumnAndPartitionPeriodForHourly, shouldConfigurePartitionColumnAndPartitionPeriod, shouldConfigurePartitionColumnAndLimit, shouldConfigurePartitionColumn, shouldConfigurePartition, shouldConfigureLimit, shouldCreateValidSqlQueryFromUserQuery), Assertion Roulette (Method: shouldConfigureLimit)

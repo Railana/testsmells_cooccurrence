@@ -1,0 +1,190 @@
+Summary:
+Instances of test smells identified: 69
+Number of different types of test smells: 11
+Number of different test classes: 1
+Number of different test methods: 8
+
+Instances by test smells:
+Assertion Roulette: 4
+Conditional Test Logic: 2
+Constructor Initialization: 1
+Duplicate Assert: 5
+Eager Test: 3
+EmptyTest: 0
+Exception Catching Throwing: 17
+General Fixture: 1
+IgnoredTest: 0
+Lazy Test: 3
+Magic Number Test: 0
+Mystery Guest: 0
+Print Statement: 12
+Redundant Assertion: 18
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 0
+Verbose Test: 3
+
+Distribution by Classes:
+Assertion Roulette: 1
+Conditional Test Logic: 1
+Constructor Initialization: 1
+Duplicate Assert: 1
+Eager Test: 1
+EmptyTest: 0
+Exception Catching Throwing: 1
+General Fixture: 1
+IgnoredTest: 0
+Lazy Test: 1
+Magic Number Test: 0
+Mystery Guest: 0
+Print Statement: 1
+Redundant Assertion: 1
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 0
+Verbose Test: 1
+
+Distribution by Methods:
+Assertion Roulette: 2
+Conditional Test Logic: 2
+Constructor Initialization: 1
+Duplicate Assert: 4
+Eager Test: 3
+EmptyTest: 0
+Exception Catching Throwing: 6
+General Fixture: 1
+IgnoredTest: 0
+Lazy Test: 2
+Magic Number Test: 0
+Mystery Guest: 0
+Print Statement: 6
+Redundant Assertion: 6
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 0
+Unknown Test: 0
+Verbose Test: 3
+
+Test classes:
+jfnr/src/test/java/com/cisco/fnr/FNRTest.java
+
+Test methods:
+testIPv4
+setUp
+testInputLength
+testKeySize
+testTweakSize
+FNRTest
+testString
+testBlockSize
+
+Test smells on the same lines and classes (with more than one test smell):
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 116: Redundant Assertion (Method: testString), Assertion Roulette (Method: testString), Exception Catching Throwing (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 110: Redundant Assertion (Method: testString), Assertion Roulette (Method: testString), Conditional Test Logic (Method: testString), Exception Catching Throwing (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 148: Redundant Assertion (Method: testIPv4), Verbose Test (Method: testIPv4), Assertion Roulette (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 141: Redundant Assertion (Method: testIPv4), Verbose Test (Method: testIPv4), Assertion Roulette (Method: testIPv4), Conditional Test Logic (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 161: Redundant Assertion (Method: testTweakSize), Duplicate Assert (Method: testTweakSize), Exception Catching Throwing (Method: testTweakSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 169: Redundant Assertion (Method: testTweakSize), Duplicate Assert (Method: testTweakSize), Exception Catching Throwing (Method: testTweakSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 177: Redundant Assertion (Method: testTweakSize), Exception Catching Throwing (Method: testTweakSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 189: Redundant Assertion (Method: testBlockSize), Duplicate Assert (Method: testBlockSize), Exception Catching Throwing (Method: testBlockSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 196: Redundant Assertion (Method: testBlockSize), Duplicate Assert (Method: testBlockSize), Exception Catching Throwing (Method: testBlockSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 203: Redundant Assertion (Method: testBlockSize), Exception Catching Throwing (Method: testBlockSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 217: Redundant Assertion (Method: testInputLength), Verbose Test (Method: testInputLength), Duplicate Assert (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 224: Redundant Assertion (Method: testInputLength), Verbose Test (Method: testInputLength), Duplicate Assert (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 234: Redundant Assertion (Method: testInputLength), Verbose Test (Method: testInputLength), Duplicate Assert (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 241: Redundant Assertion (Method: testInputLength), Verbose Test (Method: testInputLength), Duplicate Assert (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 256: Redundant Assertion (Method: testKeySize), Verbose Test (Method: testKeySize), Duplicate Assert (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 272: Redundant Assertion (Method: testKeySize), Verbose Test (Method: testKeySize), Duplicate Assert (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 279: Redundant Assertion (Method: testKeySize), Verbose Test (Method: testKeySize), Duplicate Assert (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 287: Redundant Assertion (Method: testKeySize), Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 128: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 129: Verbose Test (Method: testIPv4), Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Eager Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 130: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 131: Verbose Test (Method: testIPv4), Lazy Test (Method: testInputLength, testIPv4, testString), Eager Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 132: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 133: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4), Print Statement (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 134: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4), Print Statement (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 135: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 136: Verbose Test (Method: testIPv4), Lazy Test (Method: testInputLength, testIPv4, testString), Eager Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 137: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 138: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 139: Verbose Test (Method: testIPv4), Conditional Test Logic (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 140: Verbose Test (Method: testIPv4), Conditional Test Logic (Method: testIPv4), Exception Catching Throwing (Method: testIPv4), Print Statement (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 142: Verbose Test (Method: testIPv4), Conditional Test Logic (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 143: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 144: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4), Print Statement (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 145: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 146: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 147: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 149: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 122: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 123: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4), Print Statement (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 124: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 125: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 126: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 127: Verbose Test (Method: testIPv4), Exception Catching Throwing (Method: testIPv4)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 208: Verbose Test (Method: testInputLength), Print Statement (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 211: Verbose Test (Method: testInputLength), Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Eager Test (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 213: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 214: Verbose Test (Method: testInputLength), Lazy Test (Method: testInputLength, testIPv4, testString), Eager Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 215: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 216: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 218: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 220: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 221: Verbose Test (Method: testInputLength), Lazy Test (Method: testInputLength, testIPv4, testString), Eager Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 222: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 223: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 225: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 230: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 231: Verbose Test (Method: testInputLength), Lazy Test (Method: testInputLength, testIPv4, testString), Eager Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 232: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 233: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 235: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 237: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 238: Verbose Test (Method: testInputLength), Lazy Test (Method: testInputLength, testIPv4, testString), Eager Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 239: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 240: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 242: Verbose Test (Method: testInputLength), Exception Catching Throwing (Method: testInputLength)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 257: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 262: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 263: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 264: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 265: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 266: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 268: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 269: Verbose Test (Method: testKeySize), Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 270: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 271: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 273: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 275: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 276: Verbose Test (Method: testKeySize), Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 277: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 278: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 280: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 282: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 283: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 284: Verbose Test (Method: testKeySize), Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 285: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 286: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 288: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 246: Verbose Test (Method: testKeySize), Print Statement (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 252: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 253: Verbose Test (Method: testKeySize), Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 254: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 255: Verbose Test (Method: testKeySize), Exception Catching Throwing (Method: testKeySize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 105: Lazy Test (Method: testInputLength, testIPv4, testString), Eager Test (Method: testString), Exception Catching Throwing (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 193: Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testBlockSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 166: Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testTweakSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 103: Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Eager Test (Method: testString), Exception Catching Throwing (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 200: Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testBlockSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 174: Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testTweakSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 186: Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testBlockSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 158: Lazy Test (Method: testKeySize, testInputLength, testBlockSize, testTweakSize, testIPv4, testString), Exception Catching Throwing (Method: testTweakSize)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 106: Lazy Test (Method: testInputLength, testIPv4, testString), Eager Test (Method: testString), Exception Catching Throwing (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 108: Conditional Test Logic (Method: testString), Exception Catching Throwing (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 109: Conditional Test Logic (Method: testString), Exception Catching Throwing (Method: testString), Print Statement (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 111: Conditional Test Logic (Method: testString), Exception Catching Throwing (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 99: Exception Catching Throwing (Method: testString), Print Statement (Method: testString)
+Class jfnr/src/test/java/com/cisco/fnr/FNRTest.java - Line 113: Exception Catching Throwing (Method: testString), Print Statement (Method: testString)

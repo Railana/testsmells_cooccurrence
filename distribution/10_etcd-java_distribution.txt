@@ -1,0 +1,423 @@
+Summary:
+Instances of test smells identified: 131
+Number of different types of test smells: 13
+Number of different test classes: 2
+Number of different test methods: 9
+
+Instances by test smells:
+Assertion Roulette: 44
+Conditional Test Logic: 13
+Constructor Initialization: 0
+Duplicate Assert: 5
+Eager Test: 8
+EmptyTest: 1
+Exception Catching Throwing: 7
+General Fixture: 0
+IgnoredTest: 1
+Lazy Test: 9
+Magic Number Test: 12
+Mystery Guest: 0
+Print Statement: 9
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 16
+Unknown Test: 1
+Verbose Test: 5
+
+Distribution by Classes:
+Assertion Roulette: 2
+Conditional Test Logic: 2
+Constructor Initialization: 0
+Duplicate Assert: 2
+Eager Test: 2
+EmptyTest: 1
+Exception Catching Throwing: 2
+General Fixture: 0
+IgnoredTest: 1
+Lazy Test: 1
+Magic Number Test: 2
+Mystery Guest: 0
+Print Statement: 2
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 2
+Unknown Test: 1
+Verbose Test: 2
+
+Distribution by Methods:
+Assertion Roulette: 7
+Conditional Test Logic: 4
+Constructor Initialization: 0
+Duplicate Assert: 4
+Eager Test: 8
+EmptyTest: 1
+Exception Catching Throwing: 7
+General Fixture: 0
+IgnoredTest: 1
+Lazy Test: 7
+Magic Number Test: 4
+Mystery Guest: 0
+Print Statement: 4
+Redundant Assertion: 0
+Resource Optimism: 0
+Sensitive Equality: 0
+Sleepy Test: 4
+Unknown Test: 1
+Verbose Test: 5
+
+Test classes:
+etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java
+etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java
+
+Test methods:
+testOfflineCompact
+testLeaseKey
+testCompaction
+testStrongIterator
+testOrdering
+testBasics
+testListeners
+testSizeStability
+testResiliency
+
+Test smells on the same lines and classes (with more than one test smell):
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 74: Magic Number Test (Method: testLeaseKey), Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 79: Magic Number Test (Method: testLeaseKey), Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 87: Magic Number Test (Method: testLeaseKey), Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 124: Magic Number Test (Method: testLeaseKey), Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 58: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 59: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 60: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 61: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 62: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 63: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 64: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 65: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 66: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 67: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 68: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 69: Verbose Test (Method: testLeaseKey), Sleepy Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 70: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 71: Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 72: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 73: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 75: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 76: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 77: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 78: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 80: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 81: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 82: Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 83: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 84: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 85: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 86: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 88: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 89: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 90: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 91: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 92: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 93: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey), Print Statement (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 94: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 95: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 96: Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 97: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 98: Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 99: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey), Print Statement (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 100: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 101: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 102: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 103: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 104: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 105: Verbose Test (Method: testLeaseKey), Duplicate Assert (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 106: Verbose Test (Method: testLeaseKey), Duplicate Assert (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 107: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 108: Verbose Test (Method: testLeaseKey), Sleepy Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 109: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 110: Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 111: Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 112: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 113: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 114: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 115: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey), Print Statement (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 116: Verbose Test (Method: testLeaseKey), Sleepy Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 117: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 118: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 119: Verbose Test (Method: testLeaseKey), Duplicate Assert (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 120: Verbose Test (Method: testLeaseKey), Duplicate Assert (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 121: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 122: Verbose Test (Method: testLeaseKey), Sleepy Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 123: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 125: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 126: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 127: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 128: Verbose Test (Method: testLeaseKey), Eager Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 129: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 130: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 131: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 132: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 133: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 134: Verbose Test (Method: testLeaseKey), Assertion Roulette (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 135: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey), Print Statement (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 136: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 137: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 138: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 139: Verbose Test (Method: testLeaseKey), Conditional Test Logic (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 140: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 141: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/PersistentLeaseKeyTest.java - Line 142: Verbose Test (Method: testLeaseKey), Exception Catching Throwing (Method: testLeaseKey)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 157: Unknown Test (Method: testCompaction), Conditional Test Logic (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 158: Unknown Test (Method: testCompaction), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testCompaction), Conditional Test Logic (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 159: Unknown Test (Method: testCompaction), Conditional Test Logic (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 160: Unknown Test (Method: testCompaction), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testCompaction), Conditional Test Logic (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 161: Unknown Test (Method: testCompaction), Conditional Test Logic (Method: testCompaction), Conditional Test Logic (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 162: Unknown Test (Method: testCompaction), Conditional Test Logic (Method: testCompaction), Conditional Test Logic (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 163: Unknown Test (Method: testCompaction), Conditional Test Logic (Method: testCompaction), Conditional Test Logic (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 164: Unknown Test (Method: testCompaction), Conditional Test Logic (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 167: Unknown Test (Method: testCompaction), Lazy Test (Method: testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testCompaction), Exception Catching Throwing (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 168: Unknown Test (Method: testCompaction), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction), Eager Test (Method: testCompaction), Exception Catching Throwing (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 169: Unknown Test (Method: testCompaction), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction), Eager Test (Method: testCompaction), Exception Catching Throwing (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 170: Unknown Test (Method: testCompaction), Exception Catching Throwing (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 171: Unknown Test (Method: testCompaction), Exception Catching Throwing (Method: testCompaction)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 384: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 385: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 386: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 387: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 388: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Assertion Roulette (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 389: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Assertion Roulette (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 390: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Assertion Roulette (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 391: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 392: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 393: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 394: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 395: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Sleepy Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 396: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testOfflineCompact), Assertion Roulette (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 397: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 354: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 355: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 356: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 357: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 358: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 359: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Sleepy Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 360: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Duplicate Assert (Method: testOfflineCompact), Eager Test (Method: testOfflineCompact), Assertion Roulette (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 361: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 362: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Sleepy Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 363: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 364: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 365: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 366: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 367: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 368: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 369: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 370: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Sleepy Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 371: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 372: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Duplicate Assert (Method: testOfflineCompact), Eager Test (Method: testOfflineCompact), Assertion Roulette (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 373: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Print Statement (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 374: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction), Eager Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 375: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 376: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 377: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Sleepy Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 378: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 379: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 380: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 381: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Eager Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 382: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 383: IgnoredTest (Method: testOfflineCompact), Verbose Test (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact), Conditional Test Logic (Method: testOfflineCompact)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 99: Magic Number Test (Method: testStrongIterator), Verbose Test (Method: testStrongIterator), Lazy Test (Method: testBasics, testStrongIterator), Duplicate Assert (Method: testStrongIterator), Eager Test (Method: testStrongIterator), Assertion Roulette (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 101: Magic Number Test (Method: testStrongIterator), Verbose Test (Method: testStrongIterator), Lazy Test (Method: testBasics, testStrongIterator), Eager Test (Method: testStrongIterator), Assertion Roulette (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 109: Magic Number Test (Method: testStrongIterator), Verbose Test (Method: testStrongIterator), Lazy Test (Method: testBasics, testStrongIterator), Duplicate Assert (Method: testStrongIterator), Eager Test (Method: testStrongIterator), Assertion Roulette (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 111: Magic Number Test (Method: testStrongIterator), Verbose Test (Method: testStrongIterator), Lazy Test (Method: testBasics, testStrongIterator), Eager Test (Method: testStrongIterator), Assertion Roulette (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 199: Magic Number Test (Method: testBasics), Verbose Test (Method: testBasics), Lazy Test (Method: testBasics, testStrongIterator), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 346: Magic Number Test (Method: testSizeStability), Lazy Test (Method: testSizeStability, testResiliency), Duplicate Assert (Method: testSizeStability), Eager Test (Method: testSizeStability), Assertion Roulette (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 348: Magic Number Test (Method: testSizeStability), Lazy Test (Method: testSizeStability, testResiliency), Duplicate Assert (Method: testSizeStability), Eager Test (Method: testSizeStability), Assertion Roulette (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 350: Magic Number Test (Method: testSizeStability), Lazy Test (Method: testSizeStability, testResiliency), Eager Test (Method: testSizeStability), Assertion Roulette (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 89: Verbose Test (Method: testStrongIterator), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 90: Verbose Test (Method: testStrongIterator), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 92: Verbose Test (Method: testStrongIterator), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 93: Verbose Test (Method: testStrongIterator), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 95: Verbose Test (Method: testStrongIterator), Lazy Test (Method: testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 96: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 97: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 98: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 100: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 102: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 103: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 104: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 105: Verbose Test (Method: testStrongIterator), Lazy Test (Method: testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 106: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 107: Verbose Test (Method: testStrongIterator), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 108: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 110: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 112: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 113: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 114: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 115: Verbose Test (Method: testStrongIterator), Exception Catching Throwing (Method: testStrongIterator)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 179: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 181: Verbose Test (Method: testBasics), Lazy Test (Method: testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 182: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 183: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 184: Verbose Test (Method: testBasics), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 185: Verbose Test (Method: testBasics), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 186: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 187: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction), Eager Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 188: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 189: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 190: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 191: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 192: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 193: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 194: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 195: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 196: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 197: Verbose Test (Method: testBasics), Lazy Test (Method: testSizeStability, testBasics), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 198: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 200: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 201: Verbose Test (Method: testBasics), Lazy Test (Method: testBasics, testStrongIterator), Lazy Test (Method: testBasics, testStrongIterator), Eager Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 202: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 203: Verbose Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 204: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 205: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 206: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 207: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 208: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 209: Verbose Test (Method: testBasics), Sleepy Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 210: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 211: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 212: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 213: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 214: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 215: Verbose Test (Method: testBasics), Sleepy Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 216: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 217: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 218: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 219: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 220: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 221: Verbose Test (Method: testBasics), Sleepy Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 222: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 223: Verbose Test (Method: testBasics), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testBasics), Assertion Roulette (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 224: Verbose Test (Method: testBasics), Exception Catching Throwing (Method: testBasics)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 230: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 232: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 233: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 234: Verbose Test (Method: testResiliency), Lazy Test (Method: testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 235: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 236: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 237: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 238: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction), Eager Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 239: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 240: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 241: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 242: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 243: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 244: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 245: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 246: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 247: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 248: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 249: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 250: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 251: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 252: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 253: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 254: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 255: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 256: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 257: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 258: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 259: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 260: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 261: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 262: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 263: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 264: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 265: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 266: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction), Eager Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 267: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 268: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 269: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 270: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 271: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 272: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 273: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 274: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 275: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 276: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 277: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 278: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 279: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 280: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 281: Verbose Test (Method: testResiliency), Sleepy Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 282: Verbose Test (Method: testResiliency), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 283: Verbose Test (Method: testResiliency), Lazy Test (Method: testSizeStability, testResiliency), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 284: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 285: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 286: Verbose Test (Method: testResiliency), Sleepy Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 287: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 288: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 289: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 290: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 291: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 292: Verbose Test (Method: testResiliency), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 293: Verbose Test (Method: testResiliency), Lazy Test (Method: testSizeStability, testResiliency), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 294: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 295: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 296: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 297: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 298: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 299: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 300: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 301: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 302: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 303: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 304: Verbose Test (Method: testResiliency), Sleepy Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 305: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 306: Verbose Test (Method: testResiliency), Conditional Test Logic (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 307: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 308: Verbose Test (Method: testResiliency), Lazy Test (Method: testSizeStability, testResiliency), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 309: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 310: Verbose Test (Method: testResiliency), Lazy Test (Method: testSizeStability, testResiliency), Eager Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency), Print Statement (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 311: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 312: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency), Print Statement (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 313: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 314: Verbose Test (Method: testResiliency), Assertion Roulette (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 315: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 316: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 317: Verbose Test (Method: testResiliency), Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 318: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 319: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 320: Verbose Test (Method: testResiliency), Sleepy Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 321: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 322: Verbose Test (Method: testResiliency), Lazy Test (Method: testSizeStability, testResiliency), Eager Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency), Print Statement (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 323: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 324: Verbose Test (Method: testResiliency), Lazy Test (Method: testSizeStability, testResiliency), Eager Test (Method: testResiliency), Assertion Roulette (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 325: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 326: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 327: Verbose Test (Method: testResiliency), Assertion Roulette (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 328: Verbose Test (Method: testResiliency), Assertion Roulette (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 329: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 330: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 331: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 332: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 333: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 334: Verbose Test (Method: testResiliency), Exception Catching Throwing (Method: testResiliency)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 343: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction), Eager Test (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 342: Lazy Test (Method: testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 124: Lazy Test (Method: testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 340: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 122: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 128: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 129: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 130: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 131: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 344: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 345: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 349: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 125: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 126: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 127: Lazy Test (Method: testOfflineCompact, testSizeStability, testResiliency, testBasics, testCompaction, testOrdering, testStrongIterator), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 133: Lazy Test (Method: testOfflineCompact, testResiliency, testBasics, testOrdering), Eager Test (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 347: Lazy Test (Method: testSizeStability, testBasics), Eager Test (Method: testSizeStability), Assertion Roulette (Method: testSizeStability), Exception Catching Throwing (Method: testSizeStability)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 141: Assertion Roulette (Method: testOrdering), Exception Catching Throwing (Method: testOrdering)
+Class etcd-java/src/test/java/com/ibm/etcd/client/utils/RangeCacheTest.java - Line 139: Exception Catching Throwing (Method: testOrdering), Print Statement (Method: testOrdering)
