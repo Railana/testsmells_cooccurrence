@@ -1,0 +1,94 @@
+/*****************************************************************
+ *   Licensed to the Apache Software Foundation (ASF) under one
+ *  or more contributor license agreements.  See the NOTICE file
+ *  distributed with this work for additional information
+ *  regarding copyright ownership.  The ASF licenses this file
+ *  to you under the Apache License, Version 2.0 (the
+ *  "License"); you may not use this file except in compliance
+ *  with the License.  You may obtain a copy of the License at
+ *
+ *    https://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ ****************************************************************/
+plugins {
+    id 'java-gradle-plugin'
+    id 'java'
+}
+
+def projectVersion = getProjectVersion()
+
+group 'org.apache.cayenne.plugins'
+version projectVersion
+def cayenneVersion = version
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+def getProjectVersion() {
+    def pomFile = file('pom.xml')
+    if (pomFile.file) {
+        def pom = new XmlSlurper().parseText(file('pom.xml').text)
+        def pomVersion = pom.parent.version
+        return pomVersion
+    }
+}
+
+def classpathFile = file('build/classpath.txt')
+if (classpathFile.file) {
+    String[] paths = classpathFile.text.split(';')
+    dependencies {
+        add 'implementation', files(paths)
+    }
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+// Create file with cayenne-gradle-plugin version
+task versionFile {
+    def resourceOutputDir = file("$buildDir/resources/main/")
+    doFirst {
+        resourceOutputDir.exists() || resourceOutputDir.mkdirs()
+        // file name must be in sync with GradleCayenneExtension
+        def file = file("$buildDir/resources/main/cayenne.version")
+        file.write(cayenneVersion.toString())
+    }
+}
+
+// Copy license and notice files
+task licenseFiles(type: Copy) {
+    from '../build-tools/cayenne-legal/src/main/resources/'
+    into "$buildDir/resources/main/"
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    archiveClassifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    archiveClassifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
+
+processResources.dependsOn licenseFiles
+processResources.dependsOn versionFile

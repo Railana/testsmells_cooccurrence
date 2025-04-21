@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.apache.wicket</groupId>
+		<artifactId>wicket-parent</artifactId>
+		<version>8.16.0</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<artifactId>wicket-bean-validation</artifactId>
+	<packaging>bundle</packaging>
+	<name>Wicket Bean Validation</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>javax.el-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.wicket</groupId>
+			<artifactId>wicket-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+		  	<groupId>org.glassfish.web</groupId>
+		  	<artifactId>el-impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>clirr-maven-plugin</artifactId>
+					<configuration>
+						<ignored>
+							<difference>
+								<!-- WICKET-6656 ignore added default method -->
+							    <differenceType>7012</differenceType>
+							    <className>org/apache/wicket/bean/validation/BeanValidationContext</className>
+							    <method>boolean isRequiredConstraint(javax.validation.metadata.ConstraintDescriptor)</method>
+							</difference>
+						</ignored>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

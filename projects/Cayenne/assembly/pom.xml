@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Licensed to the Apache Software Foundation (ASF) under one
+	or more contributor license agreements.  See the NOTICE file
+	distributed with this work for additional information
+	regarding copyright ownership.  The ASF licenses this file
+	to you under the Apache License, Version 2.0 (the
+	"License"); you may not use this file except in compliance
+	with the License.  You may obtain a copy of the License at
+	
+	https://www.apache.org/licenses/LICENSE-2.0
+	
+	Unless required by applicable law or agreed to in writing,
+	software distributed under the License is distributed on an
+	"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+	KIND, either express or implied.  See the License for the
+	specific language governing permissions and limitations
+	under the License.   
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.apache.cayenne</groupId>
+		<artifactId>cayenne-parent</artifactId>
+		<version>4.2.1</version>
+	</parent>
+
+	<groupId>org.apache.cayenne.assembly</groupId>
+	<artifactId>cayenne-assembly</artifactId>
+	<packaging>pom</packaging>
+	<name>cayenne-assembly: Cayenne Release Assembly</name>
+
+	<description>An assembly of Cayenne into a generically runnable package.</description>
+
+	<properties>
+		<build.docs>process-resources</build.docs>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-server</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-dbsync</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-cgen</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-ant</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-lifecycle</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-commitlog</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-crypto</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-joda</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		 <dependency>
+            <groupId>org.apache.cayenne</groupId>
+            <artifactId>cayenne-dbcp2</artifactId>
+            <version>${project.version}</version>
+         </dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-jcache</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-cache-invalidation</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne.modeler</groupId>
+			<artifactId>cayenne-modeler</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne.docs</groupId>
+			<artifactId>cayenne-doc</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-jgroups</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-jms</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-xmpp</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-velocity</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-project-compatibility</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-web</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-osgi</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cayenne</groupId>
+			<artifactId>cayenne-rop-server</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<!-- SOURCE assembly - the base assembly of a release build -->
+		<profile>
+			<id>src</id>
+			<properties>
+				<build.docs>none</build.docs>
+			</properties>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-remote-resources-plugin</artifactId>
+						<executions>
+							<execution>
+								<goals>
+									<goal>process</goal>
+								</goals>
+								<configuration>
+									<outputDirectory>${project.build.directory}/legal</outputDirectory>
+									<properties>
+										<binary>false</binary>
+									</properties>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>assembly-src</id>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+								<configuration>
+									<descriptors>
+										<descriptor>src/main/resources/assemblies/src/assembly-src.xml</descriptor>
+									</descriptors>
+									<finalName>cayenne-${project.version}-src</finalName>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- REGULAR assembly ... combined with platform-specific ones -->
+		<profile>
+			<id>assembly</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<configuration>
+							<outputDirectory>${project.build.directory}</outputDirectory>
+							<appendAssemblyId>false</appendAssemblyId>
+							<tarLongFileMode>gnu</tarLongFileMode>
+						</configuration>
+					</plugin>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>${build.docs}</phase>
+								<configuration>
+									<tasks>
+										<copy todir="${project.build.directory}/doc-staging">
+											<fileset dir="${basedir}/../docs/asciidoc">
+												<include name="**/target/generated-docs/*.pdf" />
+												<include name="**/target/generated-docs/*.html" />
+											</fileset>
+											<flattenmapper />
+										</copy>
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<!-- GENERIC cross-platform assembly. Can be created on any platform -->
+			<id>generic</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.apache.cayenne.modeler</groupId>
+					<artifactId>cayenne-modeler-generic</artifactId>
+					<version>${project.version}</version>
+				</dependency>
+			</dependencies>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-remote-resources-plugin</artifactId>
+						<executions>
+							<execution>
+								<goals>
+									<goal>process</goal>
+								</goals>
+								<configuration>
+									<outputDirectory>${project.build.directory}/legal</outputDirectory>
+									<properties>
+										<binary>true</binary>
+									</properties>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>assembly-generic</id>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+								<configuration>
+									<descriptors>
+										<descriptor>src/main/resources/assemblies/generic/assembly-generic.xml</descriptor>
+									</descriptors>
+									<finalName>cayenne-${project.version}</finalName>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<!-- MAC assembly (can only be run on Mac) -->
+			<id>mac</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.apache.cayenne.modeler</groupId>
+					<artifactId>cayenne-modeler-mac</artifactId>
+					<version>${project.version}</version>
+				</dependency>
+			</dependencies>
+			<properties>
+				<content.dir>cayenne-${project.version}</content.dir>
+			</properties>
+			<build>
+				<plugins>
+					<!-- Make sure we are running on Mac -->
+					<plugin>
+						<artifactId>maven-enforcer-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>enforce</id>
+								<goals>
+									<goal>enforce</goal>
+								</goals>
+								<configuration>
+									<rules>
+										<requireOS>
+											<family>mac</family>
+										</requireOS>
+									</rules>
+									<fail>true</fail>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-remote-resources-plugin</artifactId>
+						<executions>
+							<execution>
+								<goals>
+									<goal>process</goal>
+								</goals>
+								<configuration>
+									<outputDirectory>${project.build.directory}/legal</outputDirectory>
+									<properties>
+										<binary>true</binary>
+									</properties>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>assembly-mac</id>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+								<configuration>
+									<descriptors>
+										<descriptor>src/main/resources/assemblies/mac/assembly-mac.xml</descriptor>
+									</descriptors>
+									<finalName>cayenne-${project.version}-macosx</finalName>
+									<attach>false</attach>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<executions>
+							<!-- chmod executable ... while japp plugin produces the correct 
+								permissions, jar/unjar operation resets 'x' flag, so the app becomes non-executable. 
+								Must fix that manually -->
+							<execution>
+								<id>chmod-modeler</id>
+								<phase>package</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<configuration>
+									<executable>/bin/chmod</executable>
+									<arguments>
+										<argument>755</argument>
+										<argument>target/cayenne-${project.version}-macosx/CayenneModeler.app/Contents/MacOS/CayenneModeler</argument>
+									</arguments>
+								</configuration>
+							</execution>
+
+							<execution>
+								<id>dmg-distro</id>
+								<phase>package</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<configuration>
+									<executable>src/main/resources/assemblies/mac/create-dmg.sh</executable>
+									<arguments>
+										<argument>${project.version}</argument>
+									</arguments>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<profile>
+			<!-- WINDOWS assembly (can only be run on Windows) -->
+			<id>windows</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.apache.cayenne.modeler</groupId>
+					<artifactId>cayenne-modeler-win</artifactId>
+					<version>${project.version}</version>
+				</dependency>
+			</dependencies>
+			<build>
+				<plugins>
+					<!-- Make sure we are running on windows -->
+					<plugin>
+						<artifactId>maven-enforcer-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>enforce</id>
+								<goals>
+									<goal>enforce</goal>
+								</goals>
+								<configuration>
+									<rules>
+										<requireOS>
+											<family>windows</family>
+										</requireOS>
+									</rules>
+									<fail>true</fail>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-remote-resources-plugin</artifactId>
+						<executions>
+							<execution>
+								<goals>
+									<goal>process</goal>
+								</goals>
+								<configuration>
+									<outputDirectory>${project.build.directory}/legal</outputDirectory>
+									<properties>
+										<binary>true</binary>
+									</properties>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>assembly-win</id>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+								<configuration>
+									<descriptors>
+										<descriptor>src/main/resources/assemblies/windows/assembly-windows.xml</descriptor>
+									</descriptors>
+									<finalName>cayenne-${project.version}-win</finalName>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

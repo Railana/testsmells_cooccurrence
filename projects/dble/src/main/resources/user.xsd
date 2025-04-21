@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016-2023 ActionTech.
+  ~ License: http://www.gnu.org/licenses/gpl.html GPL version 2 or higher.
+  -->
+
+<xs:schema xmlns:dble="http://dble.cloud/" attributeFormDefault="unqualified" elementFormDefault="qualified"
+           targetNamespace="http://dble.cloud/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import schemaLocation="user_detail.xsd"/>
+    <xs:element name="user">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="managerUser"/>
+                <xs:element ref="shardingUser"/>
+                <xs:element ref="rwSplitUser"/>
+                <xs:element ref="analysisUser"/>
+                <xs:element ref="blacklist"/>
+            </xs:choice>
+            <xs:attribute name="version" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

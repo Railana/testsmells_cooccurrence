@@ -1,0 +1,54 @@
+openapi: 3.0.3
+
+info:
+  title: Eclipse Kapua REST API - Version
+  version: '1.0'
+  contact:
+    name: Eclipse Kapua Dev Team
+    url: https://eclipse.org/kapua
+    email: kapua-dev@eclipse.org
+  license:
+    name: Eclipse Public License 2.0
+    url: https://www.eclipse.org/legal/epl-2.0
+
+paths:
+  /sys-info:
+    get:
+      tags:
+        - "System Info"
+      summary: Get the system info
+      responses:
+        200:
+          description: System info
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/systemInfo'
+
+components:
+  schemas:
+    systemInfo:
+      type: object
+      description: System info
+      properties:
+        version:
+          type: string
+          description: Version of the system
+        revision:
+          type: string
+          description: Last commit hash of the system
+        buildDate:
+          type: string
+          description: Build date of the system
+        buildNumber:
+          type: string
+          description: Build number of the system
+        buildBranch:
+          type: string
+          description: Build branch of the system
+      example:
+        buildBranch: release/2.0.0
+        buildNumber: 142
+        buildDate: 2023-03-02T08:50:59Z UTC
+        revision: e53c7b7d4208204a0791ec296fa3d4dbe2344585
+        version: 2.0.0

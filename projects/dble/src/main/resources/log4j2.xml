@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2016-2023 ActionTech.
+  ~ License: http://www.gnu.org/licenses/gpl.html GPL version 2 or higher.
+  -->
+
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d [%-5p][%t] %m %throwable{full} (%F:%L) %n"/>
+        </Console>
+
+        <RollingRandomAccessFile name="RollingFile" fileName="logs/dble.log"
+                                 filePattern="logs/$${date:yyyy-MM}/dble-%d{MM-dd}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] (%l) - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <DefaultRolloverStrategy max="100">
+                <Delete basePath="logs" maxDepth="2">
+                    <IfFileName glob="*/dble-*.log.gz">
+                        <IfLastModified age="2d">
+                            <IfAny>
+                                <IfAccumulatedFileSize exceeds="1 GB"/>
+                                <IfAccumulatedFileCount exceeds="10"/>
+                            </IfAny>
+                        </IfLastModified>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingRandomAccessFile>
+
+        <RollingFile name="ha_log" fileName="logs/ha.log"
+                     filePattern="logs/$${date:yyyy-MM}/ha-%d{MM-dd}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] (%l) - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <RollingFile name="DumpFileLog" fileName="logs/dump.log"
+                     filePattern="logs/$${date:yyyy-MM}/dump-%d{MM-dd}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] (%l) - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <RollingFile name="DDL_TRACE" fileName="logs/ddl.log"
+                     filePattern="logs/$${date:yyyy-MM}/ddl-%d{MM-dd}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%t] (%l) - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="ha_log" additivity="false" includeLocation="false">
+            <AppenderRef ref="ha_log"/>
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </AsyncLogger>
+        <AsyncLogger name="DDL_TRACE" additivity="false" includeLocation="false">
+            <AppenderRef ref="DDL_TRACE"/>
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </AsyncLogger>
+        <AsyncLogger name="dumpFileLog" additivity="false" includeLocation="false">
+            <AppenderRef ref="DumpFileLog"/>
+            <AppenderRef ref="RollingFile"/>
+        </AsyncLogger>
+
+
+        <asyncRoot level="debug" includeLocation="true">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </asyncRoot>
+    </Loggers>
+
+</Configuration>

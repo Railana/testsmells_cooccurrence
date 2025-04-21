@@ -1,0 +1,180 @@
+<FindBugsFilter>
+
+    <!-- protocol:ignore -->
+    <Match>
+        <Package name="com.actiontech.dble.cluster.general.impl.ushard"/>
+    </Match>
+    <Match>
+        <Package name="com.actiontech.dble.alarm"/>
+    </Match>
+    <Match>
+        <Class name="com.actiontech.dble.log.AlarmAppender"/>
+    </Match>
+    <!-- protocol:ignore -->
+
+    <!--MALICIOUS_CODE ,need refactor?  -->
+    <Match>
+        <Bug category="MALICIOUS_CODE"/>
+    </Match>
+
+    <!-- I18N new String(byte[])  UTF-8 OR EVENT SET? -->
+    <Match>
+        <Bug category="I18N"/>
+        <Bug pattern="DM_DEFAULT_ENCODING"/>
+    </Match>
+
+
+    <!-- need remove??? -->
+    <Match>
+        <Bug category="STYLE"/>
+        <Bug pattern="DLS_DEAD_LOCAL_STORE"/>
+        <Class name="com.actiontech.dble.plan.common.item.function.timefunc.ItemTemporalHybridFunc"/>
+    </Match>
+
+
+    <!-- need refactor -->
+    <Match>
+        <Bug category="STYLE"/>
+        <Bug pattern="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD"/>
+        <Class name="com.actiontech.dble.plan.common.time.MySQLTimeStatus"/>
+    </Match>
+    <!-- need refactor -->
+    <Match>
+        <Bug category="STYLE"/>
+        <Bug pattern="DLS_DEAD_LOCAL_STORE"/>
+        <Class name="com.actiontech.dble.plan.common.time.MyTime"/>
+    </Match>
+    <!-- need refactor -->
+    <Match>
+        <Bug category="STYLE"/>
+        <Bug pattern="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD"/>
+        <Class name="com.actiontech.dble.backend.mysql.BindValue"/>
+    </Match>
+    <!-- need refactor -->
+    <Match>
+        <Bug category="STYLE"/>
+        <Bug pattern="URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD"/>
+        <Class name="com.actiontech.dble.net.mysql.ExecutePacket"/>
+    </Match>
+    <!-- need refactor -->
+    <Match>
+        <Bug category="STYLE"/>
+        <Bug pattern="SF_SWITCH_NO_DEFAULT"/>
+        <Class name="com.actiontech.dble.server.parser.ServerParseSelect"/>
+    </Match>
+
+    <!-- always throw new exception-->
+    <Match>
+        <Bug category="STYLE"/>
+        <Bug pattern="REC_CATCH_EXCEPTION"/>
+    </Match>
+    <!-- feature -->
+    <Match>
+        <Bug category="STYLE"/>
+        <Bug pattern="DB_DUPLICATE_BRANCHES"/>
+    </Match>
+    <Match>
+        <Bug category="STYLE"/>
+        <Class name="com.actiontech.dble.plan.common.time.MyTime"/>
+        <Method name="extractDateTime"/>
+        <Bug pattern="SF_SWITCH_FALLTHROUGH"/>
+    </Match>
+    <Match>
+        <Bug category="STYLE"/>
+        <Class name="TimSort"/>
+        <Method name="binarySort"/>
+        <Bug pattern="SF_SWITCH_FALLTHROUGH"/>
+    </Match>
+    <Match>
+        <Bug category="STYLE"/>
+        <Class name="com.actiontech.dble.net.mysql.BinaryRowDataPacket"/>
+        <Method name="read"/>
+        <Bug pattern="NP_LOAD_OF_KNOWN_NULL_VALUE"/>
+    </Match>
+    <Match>
+        <Class name="com.actiontech.dble.meta.ProxyMetaManager"/>
+        <Method name="notifyResponseClusterDDL"/>
+        <Bug pattern="UL_UNRELEASED_LOCK_EXCEPTION_PATH"/>
+    </Match>
+
+    <!-- STYLE end -->
+
+    <!-- PERFORMANCE -->
+    <!-- system.gc() is needed?-->
+    <Match>
+        <Bug category="PERFORMANCE"/>
+        <Bug pattern="DM_GC"/>
+    </Match>
+    <!-- need refactor -->
+    <Match>
+        <Bug category="PERFORMANCE"/>
+        <Class name="com.actiontech.dble.plan.common.locale.MyLocale"/>
+        <Bug pattern="URF_UNREAD_FIELD"/>
+    </Match>
+    <!-- need refactor -->
+    <Match>
+        <Bug category="PERFORMANCE"/>
+        <Class name="com.actiontech.dble.plan.common.locale.MyLocaleErrMsgs"/>
+        <Bug pattern="URF_UNREAD_FIELD"/>
+    </Match>
+    <!-- need refactor -->
+    <Match>
+        <Bug category="PERFORMANCE"/>
+        <Class name="com.actiontech.dble.plan.common.typelib.TypeLib"/>
+        <Bug pattern="URF_UNREAD_FIELD"/>
+    </Match>
+    <!-- PERFORMANCE end -->
+
+    <!-- CORRECTNESS start -->
+    <Match>
+        <Bug category="CORRECTNESS"/>
+        <Class name="com.actiontech.dble.plan.node.JoinNode"/>
+        <Method name="setRightNode"/>
+        <Bug pattern="NP_NULL_PARAM_DEREF_ALL_TARGETS_DANGEROUS"/>
+    </Match>
+    <!-- CORRECTNESS end -->
+
+    <!-- MT_CORRECTNESS -->
+    <Match>
+        <Bug category="MT_CORRECTNESS"/>
+        <Class name="com.actiontech.dble.DbleServer"/>
+        <Method name="genXaTxId"/>
+        <Bug pattern="JLM_JSR166_UTILCONCURRENT_MONITORENTER"/>
+    </Match>
+    <Match>
+        <Bug category="MT_CORRECTNESS"/>
+        <Class name="com.actiontech.dble.statistic.stat.QueryTimeCostContainer"/>
+        <Method name="add"/>
+        <Bug pattern="JLM_JSR166_UTILCONCURRENT_MONITORENTER"/>
+    </Match>
+    <Match>
+        <Bug category="MT_CORRECTNESS"/>
+        <Class name="com.actiontech.dble.backend.mysql.xa.recovery.impl.FileSystemRepository"/>
+        <Bug pattern="IS2_INCONSISTENT_SYNC"/>
+    </Match>
+    <Match>
+        <Bug category="MT_CORRECTNESS"/>
+        <Class name="com.actiontech.dble.server.handler.ServerLoadDataInfileHandler"/>
+        <Bug pattern="IS2_INCONSISTENT_SYNC"/>
+    </Match>
+    <Match>
+        <Bug category="MT_CORRECTNESS"/>
+        <Class name="com.actiontech.dble.services.rwsplit.RWSplitHandler"/>
+        <Bug pattern="IS2_INCONSISTENT_SYNC"/>
+    </Match>
+    <!-- MT_CORRECTNESS end -->
+
+    <!-- BAD_PRACTICE start ,num:9-->
+    <Match>
+        <Bug category="BAD_PRACTICE"/>
+        <Bug pattern="RR_NOT_CHECKED,RV_RETURN_VALUE_IGNORED_BAD_PRACTICE"/>
+    </Match>
+    <Match>
+        <Bug category="BAD_PRACTICE"/>
+        <Class name="com.actiontech.dble.server.handler.SetInnerHandler"/>
+        <Method name="isSwitchOn"/>
+        <Bug pattern="NP_BOOLEAN_RETURN_NULL"/>
+    </Match>
+    <!-- BAD_PRACTICE end-->
+
+</FindBugsFilter>

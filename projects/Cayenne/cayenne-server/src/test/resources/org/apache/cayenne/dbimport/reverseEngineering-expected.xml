@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Licensed to the Apache Software Foundation (ASF) under one
+  ~    or more contributor license agreements.  See the NOTICE file
+  ~    distributed with this work for additional information
+  ~    regarding copyright ownership.  The ASF licenses this file
+  ~    to you under the Apache License, Version 2.0 (the
+  ~    "License"); you may not use this file except in compliance
+  ~    with the License.  You may obtain a copy of the License at
+  ~
+  ~      https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing,
+  ~    software distributed under the License is distributed on an
+  ~    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~    KIND, either express or implied.  See the License for the
+  ~    specific language governing permissions and limitations
+  ~    under the License.
+  -->
+<reverseEngineering xmlns="http://cayenne.apache.org/schema/8/reverseEngineering"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://cayenne.apache.org/schema/8/reverseEngineering http://cayenne.apache.org/schema/8/reverseEngineering.xsd">
+    <catalog name="catalog1">
+        <includeTable pattern="includedTable1"/>
+        <includeTable pattern="includedTable2"/>
+        <excludeTable pattern="excludedTable1"/>
+        <excludeTable pattern="excludedTable2"/>
+        <includeColumn pattern="includedColumn1"/>
+        <includeColumn pattern="includedColumn2"/>
+        <excludeColumn pattern="excludedColumn1"/>
+        <excludeColumn pattern="excludedColumn2"/>
+        <includeProcedure pattern="includedProcedure1"/>
+        <includeProcedure pattern="includedProcedure2"/>
+        <excludeProcedure pattern="excludedProcedure1"/>
+        <excludeProcedure pattern="excludedProcedure2"/>
+        <schema name="schema1"/>
+        <schema name="schema2"/>
+    </catalog>
+    <catalog name="catalog2"/>
+    <catalog name="catalog3"/>
+    <schema name="schema3"/>
+</reverseEngineering>

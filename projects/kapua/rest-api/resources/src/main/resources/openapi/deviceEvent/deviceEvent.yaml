@@ -1,0 +1,79 @@
+openapi: 3.0.3
+
+info:
+  title: Eclipse Kapua REST API - Device Event
+  version: '1.0'
+  contact:
+    name: Eclipse Kapua Dev Team
+    url: https://eclipse.org/kapua
+    email: kapua-dev@eclipse.org
+  license:
+    name: Eclipse Public License 2.0
+    url: https://www.eclipse.org/legal/epl-2.0
+
+paths: {}
+
+components:
+  parameters:
+    deviceEventId:
+      name: deviceEventId
+      in: path
+      description: The ID of the Device Event on which to perform the operation
+      schema:
+        $ref: '../openapi.yaml#/components/schemas/kapuaId'
+      required: true
+  schemas:
+    deviceEvent:
+      allOf:
+        - $ref: '../openapi.yaml#/components/schemas/kapuaEntity'
+        - type: object
+          properties:
+            deviceId:
+              allOf:
+                - $ref: '../openapi.yaml#/components/schemas/kapuaId'
+            sentOn:
+              type: string
+              format: 'date-time'
+            receivedOn:
+              type: string
+              format: 'date-time'
+            position:
+              $ref: '../dataMessage/dataMessage.yaml#/components/schemas/position'
+            resource:
+              type: string
+            action:
+              $ref: '../openapi.yaml#/components/schemas/action'
+            responseCode:
+              type: string
+              enum:
+                - ACCEPTED
+                - SENT
+                - BAD_REQUEST
+                - NOT_FOUND
+                - INTERNAL_ERROR
+            eventMessage:
+              type: string
+          example:
+            id: YYHQ2i1S-P0
+            scopeId: AQ
+            createdOn: '2019-09-12T09:04:37.392Z'
+            createdBy: Ag
+            deviceId: WyczTs_GuDM
+            receivedOn: '2019-09-12T09:04:32.646Z'
+            position:
+              altitude: 0
+              latitude: 0
+              longitude: 0
+            resource: BIRTH
+            action: CREATE
+            responseCode: ACCEPTED
+            eventMessage: 'acceptEncoding=gzip~~applicationFramework=Kura~~applicationFrameworkVersion=ESF_6.0.0~~applicationIdentifiers=heaterPROV-V2DEPLOY-V2VPNCLIENT-V2CONF-V1CERT-V1ASSET-V1CMD-V1~~availableProcessors=4~~bios=N/A~~biosVersion=N/A~~connectionInterface=lo (00:00:00:00:00:00)~~connectionIp=127.0.0.1~~containerFramework=Eclipse~~containerFrameworkVersion=1.8.0~~displayName=~~firmware=N/A~~firmwareVersion=N/A~~jvm=Java HotSpot(TM) 64-Bit Server VM~~jvmProfile=Java(TM) SE Runtime Environment 1.8.0_161-b12~~jvmVersion=25.161-b12 mixed mode~~modelId=ESF-Docker-RHEL~~modelName=ESF-Docker-RHEL~~os=Linux~~osArch=amd64~~osVersion=4.9.184-linuxkit #1 SMP Tue Jul 2 22:58:16 UTC 2019~~partNumber=ESF-Docker-RHEL~~serialNumber=ESF-Docker-RHEL~~totalMemory=1023488~~uptime=187894320'
+    deviceEventListResult:
+      allOf:
+        - $ref: '../openapi.yaml#/components/schemas/kapuaListResult'
+        - type: object
+          properties:
+            items:
+              type: array
+              items:
+                $ref: '#/components/schemas/deviceEvent'
