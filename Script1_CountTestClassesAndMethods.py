@@ -7,7 +7,7 @@ def download_projects():
     with open("git_refs.csv") as f:
         for ref in f:
             name, link = ref.split(",")
-            url = link.replace('tree', 'archive').replace("\n", "").strip() + ".zip"
+            url = link.replace('tree', 'archive').replace('commit', 'archive').replace("\n", "").strip() + ".zip"
             print(url)
             os.system(f"cd {PROJECTS_DIR};curl -L -o {name}.zip {url}")
             os.system(f"cd {PROJECTS_DIR};unzip {name}.zip -d {name}; rm {name}.zip")

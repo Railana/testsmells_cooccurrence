@@ -1,0 +1,23 @@
+Project,Java Files,Total Lines,Total Test Classes,Total Test Methods
+jfnr,4,644,1,8
+JSqlParser,284,27969,56,829
+dble,1641,272539,53,307
+Asset-Share-Commons,320,31686,51,260
+jcef,274,158387,12,27
+kapua,3693,374960,414,2531
+Accumulo,2179,657852,561,2054
+gctoolkit,276,29872,54,175
+Cayenne,4198,494715,840,4310
+Guice,621,106762,166,1645
+facebook-java-business-sdk,1113,674843,15,62
+Bookkeeper,2353,421111,564,2760
+Zookeeper,925,185582,327,1432
+DBeam,47,6330,15,101
+etcd-java,40,9845,9,29
+Neptune-Export,355,34949,77,395
+Apache-Maven-Dependency-Plugin,138,21862,13,61
+Cassandra,3749,839494,1058,6253
+Joda-Time,330,148962,135,4269
+Hive,5088,1452697,752,4556
+Cxf,7612,1045091,1274,7775
+Wiket,3279,427267,619,2510
