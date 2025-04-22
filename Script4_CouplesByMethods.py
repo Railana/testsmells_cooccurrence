@@ -2,32 +2,30 @@ import pandas as pd
 import os
 from collections import defaultdict
 
-#accumulo_result_bytestsmells.csv
-#asset-share-commons_result_bytestsmells.csv
-#maven-dependency-plugin_result_bytestsmells.csv
-#bookkeeper_result_bytestsmells.csv
-#cassandra_result_bytestsmells.csv
-#cayenne_result_bytestsmells.csv
-#cxf_result_bytestsmells.csv
-#dbeam_result_bytestsmells.csv
-#dble_result_bytestsmells.csv
-#etcd-java_result_bytestsmells.csv
-#facebook-java-business-sdk_result_bytestsmells.csv
-#gctoolkit_result_bytestsmells.csv
-#guice_result_bytestsmells.csv
-#hive_result_bytestsmells.csv
-#jcef_result_bytestsmells.csv
-#jfnr_result_bytestsmells.csv
-#joda-time_result_bytestsmells.csv
-#JSqlParser_result_bytestsmells.csv
-#kapua_result_bytestsmells.csv
-#neptune-export_result_bytestsmells.csv
-#wicket_result_bytestsmells.csv
-#zookeeper_result_bytestsmells.csv
-
-# Carregar o arquivo CSV com o delimitador ";"
-
-df = pd.read_csv('/Users/railanasantana/Desktop/New_testsmells_analysis/accumulo_result_bytestsmells.csv', delimiter=',')
+all_files = [
+    "01_accumulo_result_bytestsmells.csv",
+    "02_apache-maven-dependency-plugin_result_bytestsmells.csv",
+    "03_asset-share-commons_result_bytestsmells.csv",
+    "04_bookkeeper_result_bytestsmells.csv",
+    "05_cassandra_result_bytestsmells.csv",
+    "06_cayenne_result_bytestsmells.csv",
+    "07_cxf_result_bytestsmells.csv" ,
+    "08_dbeam_result_bytestsmells.csv",
+    "09_dble_result_bytestsmells.csv",
+    "10_etcd-java_result_bytestsmells.csv",
+    "11_facebook-java-business-sdk_result_bytestsmells.csv",
+    "12_gctoolkit_result_bytestsmells.csv",
+    "13_guice_result_bytestsmells.csv",
+    "14_hive_result_bytestsmells.csv",
+    "15_jcef_result_bytestsmells.csv",
+    "16_jfnr_result_bytestsmells.csv",
+    "17_joda-time_result_bytestsmells.csv",
+    "18_JSqlParser_result_bytestsmells.csv",
+    "19_kapua_result_bytestsmells.csv",
+    "20_neptune-export_result_bytestsmells.csv",
+    "21_wicket_result_bytestsmells.csv",
+    "22_zookeeper_result_bytestsmells.csv"
+]
 
 # Lista de co-ocorrências de test smells a serem analisadas
 co_ocorrencias = [
@@ -204,38 +202,46 @@ co_ocorrencias = [
     ("Unknown Test", "Verbose Test")
 ]
 
-# Contador para as co-ocorrências, inicializando todas com zero
-co_ocorrencias_count = defaultdict(int)
+test_smells_dir = os.path.join(os.getenv("HOME"), "Desktop", "testsmells_cooccurrence")
+test_smells_input_dir = os.path.join(test_smells_dir, "testsmells_results")
 
-# Agrupar o DataFrame pelos métodos
-grouped = df.groupby(['pathFile', 'testSmellMethod'])
+for file_name in all_files:
+    input_file = os.path.join(test_smells_input_dir, file_name)
+    output_file = os.path.join(test_smells_dir, "couples_methods", file_name.replace('_result_bytestsmells.csv', '_couples_methods.csv'))
+    
+    df = pd.read_csv(input_file, delimiter=',')
 
-# Verificar cada grupo para co-ocorrência de test smells
-for _, group in grouped:
-    test_smells = set(group['testSmellName'])
+    # Contador para as co-ocorrências, inicializando todas com zero
+    co_ocorrencias_count = defaultdict(int)
 
-    # Iterar sobre cada par de co-ocorrência na lista fornecida
+    # Agrupar o DataFrame pelos métodos
+    grouped = df.groupby(['pathFile', 'testSmellMethod'])
+
+    # Verificar cada grupo para co-ocorrência de test smells
+    for _, group in grouped:
+        test_smells = set(group['testSmellName'])
+
+        # Iterar sobre cada par de co-ocorrência na lista fornecida
+        for smell1, smell2 in co_ocorrencias:
+            if smell1 in test_smells and smell2 in test_smells:
+                co_ocorrencias_count[(smell1, smell2)] += 1
+
+    # Verifica se o arquivo CSV existe e exclui se necessário
+    if os.path.exists(output_file):
+        os.remove(output_file)
+
+    # Preparar os dados para o CSV, garantindo que todas co-ocorrências sejam listadas
+    data = []
     for smell1, smell2 in co_ocorrencias:
-        if smell1 in test_smells and smell2 in test_smells:
-            co_ocorrencias_count[(smell1, smell2)] += 1
+        count = co_ocorrencias_count[(smell1, smell2)]
+        data.append([smell1, smell2, count])
 
-# Verifica se o arquivo CSV existe e exclui se necessário
-output_file = '/Users/railanasantana/Desktop/New_testsmells_analysis/resultado.csv'
-if os.path.exists(output_file):
-    os.remove(output_file)
+    # Criar o DataFrame e ordenar o resultado de A a Z
+    df_resultado = pd.DataFrame(data, columns=['TestSmell1', 'TestSmell2', 'Count'])
+    df_resultado = df_resultado.sort_values(by=['TestSmell1', 'TestSmell2'])
 
-# Preparar os dados para o CSV, garantindo que todas co-ocorrências sejam listadas
-data = []
-for smell1, smell2 in co_ocorrencias:
-    count = co_ocorrencias_count[(smell1, smell2)]
-    data.append([smell1, smell2, count])
+    # Salvar o resultado no arquivo CSV
+    df_resultado.to_csv(output_file, index=False, sep=',')
 
-# Criar o DataFrame e ordenar o resultado de A a Z
-df_resultado = pd.DataFrame(data, columns=['Primeiro Test Smell', 'Segundo Test Smell', 'Frequência de Métodos'])
-df_resultado = df_resultado.sort_values(by=['Primeiro Test Smell', 'Segundo Test Smell'])
-
-# Salvar o resultado no arquivo CSV
-df_resultado.to_csv(output_file, index=False, sep=';')
-
-# Exibir mensagem de sucesso
-print(f"Resultado salvo no arquivo {output_file}.")
+    # Exibir mensagem de sucesso
+    print(f"From {file_name} - output saved in {output_file}.")

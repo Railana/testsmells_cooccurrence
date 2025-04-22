@@ -1,6 +1,32 @@
 import csv
+import os
 from itertools import combinations
 from collections import defaultdict
+
+all_files = [
+    "01_accumulo_result_bytestsmells.csv",
+    "02_apache-maven-dependency-plugin_result_bytestsmells.csv",
+    "03_asset-share-commons_result_bytestsmells.csv",
+    "04_bookkeeper_result_bytestsmells.csv",
+    "05_cassandra_result_bytestsmells.csv",
+    "06_cayenne_result_bytestsmells.csv",
+    "07_cxf_result_bytestsmells.csv" ,
+    "08_dbeam_result_bytestsmells.csv",
+    "09_dble_result_bytestsmells.csv",
+    "10_etcd-java_result_bytestsmells.csv",
+    "11_facebook-java-business-sdk_result_bytestsmells.csv",
+    "12_gctoolkit_result_bytestsmells.csv",
+    "13_guice_result_bytestsmells.csv",
+    "14_hive_result_bytestsmells.csv",
+    "15_jcef_result_bytestsmells.csv",
+    "16_jfnr_result_bytestsmells.csv",
+    "17_joda-time_result_bytestsmells.csv",
+    "18_JSqlParser_result_bytestsmells.csv",
+    "19_kapua_result_bytestsmells.csv",
+    "20_neptune-export_result_bytestsmells.csv",
+    "21_wicket_result_bytestsmells.csv",
+    "22_zookeeper_result_bytestsmells.csv"
+]
 
 # Função para ler o CSV e extrair os dados
 def read_csv(file_path):
@@ -217,15 +243,13 @@ smell_pairs = [
     ('Unknown Test', 'Verbose Test')
 ]
 
-# Caminho para o arquivo CSV de entrada
-#input_file = 'test_smells.csv'
-input_file = '/Users/railanasantana/Desktop/New_testsmells_analysis/accumulo_result_bytestsmells.csv'
-# Caminho para o arquivo CSV de saída
-output_file = '/Users/railanasantana/Desktop/New_testsmells_analysis/resultado.csv'
+test_smells_dir = os.path.join(os.getenv("HOME"), "Desktop", "testsmells_cooccurrence")
+test_smells_input_dir = os.path.join(test_smells_dir, "testsmells_results")
 
-# Processar o arquivo CSV
-test_smells = read_csv(input_file)
-cooccurrences = count_cooccurrences(test_smells, smell_pairs)
-save_results(cooccurrences, output_file)
+for file_name in all_files:
+    input_file = os.path.join(test_smells_input_dir, file_name)
+    output_file = os.path.join(test_smells_dir, "couples_classes", file_name.replace('_result_bytestsmells.csv', '_couples_classes.csv'))
 
-print("Processamento concluído. Resultados salvos em 'resultado.csv'.")
+    test_smells = read_csv(input_file)
+    cooccurrences = count_cooccurrences(test_smells, smell_pairs)
+    save_results(cooccurrences, output_file)

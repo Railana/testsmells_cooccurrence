@@ -1,0 +1,172 @@
+TestSmell1,TestSmell2,Count
+Assertion Roulette,Conditional Test Logic,94
+Assertion Roulette,Constructor Initialization,25
+Assertion Roulette,Duplicate Assert,145
+Assertion Roulette,Eager Test,297
+Assertion Roulette,EmptyTest,0
+Assertion Roulette,Exception Catching Throwing,127
+Assertion Roulette,General Fixture,71
+Assertion Roulette,IgnoredTest,21
+Assertion Roulette,Lazy Test,331
+Assertion Roulette,Magic Number Test,238
+Assertion Roulette,Mystery Guest,29
+Assertion Roulette,Print Statement,3
+Assertion Roulette,Redundant Assertion,7
+Assertion Roulette,Resource Optimism,22
+Assertion Roulette,Sensitive Equality,74
+Assertion Roulette,Sleepy Test,13
+Assertion Roulette,Unknown Test,90
+Assertion Roulette,Verbose Test,172
+Conditional Test Logic,Constructor Initialization,12
+Conditional Test Logic,Duplicate Assert,31
+Conditional Test Logic,Eager Test,59
+Conditional Test Logic,EmptyTest,0
+Conditional Test Logic,Exception Catching Throwing,47
+Conditional Test Logic,General Fixture,19
+Conditional Test Logic,IgnoredTest,7
+Conditional Test Logic,Lazy Test,68
+Conditional Test Logic,Magic Number Test,68
+Conditional Test Logic,Mystery Guest,20
+Conditional Test Logic,Print Statement,2
+Conditional Test Logic,Redundant Assertion,0
+Conditional Test Logic,Resource Optimism,14
+Conditional Test Logic,Sensitive Equality,21
+Conditional Test Logic,Sleepy Test,6
+Conditional Test Logic,Unknown Test,30
+Conditional Test Logic,Verbose Test,71
+Constructor Initialization,Duplicate Assert,6
+Constructor Initialization,Eager Test,7
+Constructor Initialization,EmptyTest,0
+Constructor Initialization,Exception Catching Throwing,10
+Constructor Initialization,General Fixture,7
+Constructor Initialization,IgnoredTest,0
+Constructor Initialization,Lazy Test,11
+Constructor Initialization,Magic Number Test,14
+Constructor Initialization,Mystery Guest,4
+Constructor Initialization,Print Statement,0
+Constructor Initialization,Redundant Assertion,1
+Constructor Initialization,Resource Optimism,4
+Constructor Initialization,Sensitive Equality,1
+Constructor Initialization,Sleepy Test,0
+Constructor Initialization,Unknown Test,10
+Constructor Initialization,Verbose Test,11
+Duplicate Assert,Eager Test,102
+Duplicate Assert,EmptyTest,0
+Duplicate Assert,Exception Catching Throwing,48
+Duplicate Assert,General Fixture,26
+Duplicate Assert,IgnoredTest,7
+Duplicate Assert,Lazy Test,101
+Duplicate Assert,Magic Number Test,95
+Duplicate Assert,Mystery Guest,9
+Duplicate Assert,Print Statement,1
+Duplicate Assert,Redundant Assertion,1
+Duplicate Assert,Resource Optimism,6
+Duplicate Assert,Sensitive Equality,29
+Duplicate Assert,Sleepy Test,10
+Duplicate Assert,Unknown Test,34
+Duplicate Assert,Verbose Test,91
+Eager Test,EmptyTest,1
+Eager Test,Exception Catching Throwing,95
+Eager Test,General Fixture,51
+Eager Test,IgnoredTest,14
+Eager Test,Lazy Test,247
+Eager Test,Magic Number Test,147
+Eager Test,Mystery Guest,20
+Eager Test,Print Statement,3
+Eager Test,Redundant Assertion,5
+Eager Test,Resource Optimism,17
+Eager Test,Sensitive Equality,53
+Eager Test,Sleepy Test,8
+Eager Test,Unknown Test,74
+Eager Test,Verbose Test,118
+EmptyTest,Exception Catching Throwing,1
+EmptyTest,General Fixture,1
+EmptyTest,IgnoredTest,0
+EmptyTest,Lazy Test,1
+EmptyTest,Magic Number Test,0
+EmptyTest,Mystery Guest,0
+EmptyTest,Print Statement,0
+EmptyTest,Redundant Assertion,0
+EmptyTest,Resource Optimism,0
+EmptyTest,Sensitive Equality,0
+EmptyTest,Sleepy Test,0
+EmptyTest,Unknown Test,1
+EmptyTest,Verbose Test,0
+Exception Catching Throwing,General Fixture,30
+Exception Catching Throwing,IgnoredTest,11
+Exception Catching Throwing,Lazy Test,118
+Exception Catching Throwing,Magic Number Test,97
+Exception Catching Throwing,Mystery Guest,18
+Exception Catching Throwing,Print Statement,1
+Exception Catching Throwing,Redundant Assertion,2
+Exception Catching Throwing,Resource Optimism,14
+Exception Catching Throwing,Sensitive Equality,25
+Exception Catching Throwing,Sleepy Test,10
+Exception Catching Throwing,Unknown Test,50
+Exception Catching Throwing,Verbose Test,71
+General Fixture,IgnoredTest,4
+General Fixture,Lazy Test,65
+General Fixture,Magic Number Test,44
+General Fixture,Mystery Guest,5
+General Fixture,Print Statement,1
+General Fixture,Redundant Assertion,2
+General Fixture,Resource Optimism,5
+General Fixture,Sensitive Equality,8
+General Fixture,Sleepy Test,4
+General Fixture,Unknown Test,37
+General Fixture,Verbose Test,35
+IgnoredTest,Lazy Test,14
+IgnoredTest,Magic Number Test,12
+IgnoredTest,Mystery Guest,3
+IgnoredTest,Print Statement,1
+IgnoredTest,Redundant Assertion,1
+IgnoredTest,Resource Optimism,3
+IgnoredTest,Sensitive Equality,7
+IgnoredTest,Sleepy Test,2
+IgnoredTest,Unknown Test,15
+IgnoredTest,Verbose Test,12
+Lazy Test,Magic Number Test,174
+Lazy Test,Mystery Guest,24
+Lazy Test,Print Statement,2
+Lazy Test,Redundant Assertion,6
+Lazy Test,Resource Optimism,20
+Lazy Test,Sensitive Equality,56
+Lazy Test,Sleepy Test,6
+Lazy Test,Unknown Test,88
+Lazy Test,Verbose Test,121
+Magic Number Test,Mystery Guest,19
+Magic Number Test,Print Statement,3
+Magic Number Test,Redundant Assertion,4
+Magic Number Test,Resource Optimism,15
+Magic Number Test,Sensitive Equality,42
+Magic Number Test,Sleepy Test,9
+Magic Number Test,Unknown Test,46
+Magic Number Test,Verbose Test,110
+Mystery Guest,Print Statement,1
+Mystery Guest,Redundant Assertion,1
+Mystery Guest,Resource Optimism,27
+Mystery Guest,Sensitive Equality,7
+Mystery Guest,Sleepy Test,0
+Mystery Guest,Unknown Test,11
+Mystery Guest,Verbose Test,15
+Print Statement,Redundant Assertion,0
+Print Statement,Resource Optimism,1
+Print Statement,Sensitive Equality,2
+Print Statement,Sleepy Test,0
+Print Statement,Unknown Test,0
+Print Statement,Verbose Test,3
+Redundant Assertion,Resource Optimism,1
+Redundant Assertion,Sensitive Equality,2
+Redundant Assertion,Sleepy Test,0
+Redundant Assertion,Unknown Test,4
+Redundant Assertion,Verbose Test,2
+Resource Optimism,Sensitive Equality,6
+Resource Optimism,Sleepy Test,0
+Resource Optimism,Unknown Test,9
+Resource Optimism,Verbose Test,10
+Sensitive Equality,Sleepy Test,3
+Sensitive Equality,Unknown Test,15
+Sensitive Equality,Verbose Test,29
+Sleepy Test,Unknown Test,4
+Sleepy Test,Verbose Test,10
+Unknown Test,Verbose Test,53
