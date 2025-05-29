@@ -27,8 +27,6 @@ all_files = [
     "21_wicket_result_bytestsmells.csv",
     "22_zookeeper_result_bytestsmells.csv"
 ]
-
-# Função para ler o CSV e extrair os dados
 def read_csv(file_path):
     test_smells = defaultdict(lambda: defaultdict(set))
     with open(file_path, 'r') as file:
@@ -39,7 +37,6 @@ def read_csv(file_path):
             test_smells[path_file][smell_name].add(row['testSmellMethod'])
     return test_smells
 
-# Função para contar co-ocorrências de test smells
 def count_cooccurrences(test_smells, smell_pairs):
     cooccurrences = defaultdict(int)
     
@@ -51,15 +48,13 @@ def count_cooccurrences(test_smells, smell_pairs):
                 cooccurrences[(smell1, smell2)] += 1
             else:
                 cooccurrences[(smell2, smell1)] += 1
-    
-    # Adiciona pares com contagem zero
+
     for (smell1, smell2) in smell_pairs:
         if (smell1, smell2) not in cooccurrences and (smell2, smell1) not in cooccurrences:
             cooccurrences[(smell1, smell2)] = 0
     
     return cooccurrences
 
-# Função para salvar os resultados em um CSV
 def save_results(cooccurrences, output_file):
     with open(output_file, 'w', newline='') as file:
         writer = csv.writer(file)
@@ -68,7 +63,6 @@ def save_results(cooccurrences, output_file):
         for (smell1, smell2) in sorted(cooccurrences):
             writer.writerow([smell1, smell2, cooccurrences[(smell1, smell2)]])
 
-# Defina os pares de test smells a serem considerados
 smell_pairs = [
     ('Assertion Roulette', 'Conditional Test Logic'),
     ('Assertion Roulette', 'Constructor Initialization'),
