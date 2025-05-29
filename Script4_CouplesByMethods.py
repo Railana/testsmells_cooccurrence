@@ -26,8 +26,6 @@ all_files = [
     "21_wicket_result_bytestsmells.csv",
     "22_zookeeper_result_bytestsmells.csv"
 ]
-
-# Lista de co-ocorrências de test smells a serem analisadas
 co_ocorrencias = [
     ("Assertion Roulette", "Conditional Test Logic"),
     ("Assertion Roulette", "Constructor Initialization"),
@@ -211,37 +209,27 @@ for file_name in all_files:
     
     df = pd.read_csv(input_file, delimiter=',')
 
-    # Contador para as co-ocorrências, inicializando todas com zero
     co_ocorrencias_count = defaultdict(int)
 
-    # Agrupar o DataFrame pelos métodos
     grouped = df.groupby(['pathFile', 'testSmellMethod'])
 
-    # Verificar cada grupo para co-ocorrência de test smells
     for _, group in grouped:
         test_smells = set(group['testSmellName'])
 
-        # Iterar sobre cada par de co-ocorrência na lista fornecida
         for smell1, smell2 in co_ocorrencias:
             if smell1 in test_smells and smell2 in test_smells:
                 co_ocorrencias_count[(smell1, smell2)] += 1
 
-    # Verifica se o arquivo CSV existe e exclui se necessário
     if os.path.exists(output_file):
         os.remove(output_file)
-
-    # Preparar os dados para o CSV, garantindo que todas co-ocorrências sejam listadas
     data = []
     for smell1, smell2 in co_ocorrencias:
         count = co_ocorrencias_count[(smell1, smell2)]
         data.append([smell1, smell2, count])
 
-    # Criar o DataFrame e ordenar o resultado de A a Z
     df_resultado = pd.DataFrame(data, columns=['TestSmell1', 'TestSmell2', 'Count'])
     df_resultado = df_resultado.sort_values(by=['TestSmell1', 'TestSmell2'])
 
-    # Salvar o resultado no arquivo CSV
     df_resultado.to_csv(output_file, index=False, sep=',')
 
-    # Exibir mensagem de sucesso
     print(f"From {file_name} - output saved in {output_file}.")
